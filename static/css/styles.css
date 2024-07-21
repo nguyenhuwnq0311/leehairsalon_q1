@@ -22,7 +22,7 @@
 }
 
 .menu-bg {
-    background-image: url('./images/background/bg-14.jpg');
+    background-image: url('/static/images/background/bg-14.jpg');
     padding: 20px;
 
 }
@@ -207,7 +207,7 @@ html{
     padding-right: 0 !important;
 }
 .offcanvas{
-    background-image: url('./images/background/bg-14.jpg');
+    background-image: url('/static/images/background/bg-14.jpg');
     background-size: cover !important;
 }
 
