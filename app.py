@@ -1,10 +1,10 @@
-from flask import Flask, render_template,redirect,url_for
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
-def default():
-    return redirect(url_for('index'))
+def index():
+    return render_template('index.html')
 
 
 @app.route('/trang-chu')
