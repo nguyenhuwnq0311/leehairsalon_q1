@@ -1,0 +1,272 @@
+{% extends 'index.html' %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+{% endblock css %}
+
+{% block html %}
+
+<div class="mt-5 mb-lg-4 mb-sm-5 mb-3">&#160;</div>
+<div class="container-fluid">
+    <div class="row overflow-hidden fixed-top">
+        {% include 'navbar.html' %}
+    </div>
+    <div class="container-fluid bg-dark text-center">
+        <div class="row bg-dark position-relative" >
+            <div class="overflow-hidden">
+                <h5 class="overflow-hidden fw-bold text-light text-center mb-4 mt-4 responsive-text mx-2" v-text="getContent('content-H0')"></>
+            </div>
+        </div>
+      </div>
+    <div class="row position-relative">
+        <img class="d-flex img w-100"  :src="getImage('{{ url_for('static', filename='images/background/bg-1.jpg')}}')" alt="Background Image" loading="lazy">
+        <div class="position-absolute top-50 start-50 translate-middle w-100 text-center">
+            <div class="d-flex justify-content-center">
+                <p class="overflow-hidden text-white fs-3" v-text="getContent('content-H1')"></p>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+                <h2 class="overflow-hidden text-white display-2 fw-bold " v-text="getContent('content-H2')"></h2>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+                <p class="overflow-hidden text-white fs-3" v-text="getContent('content-H3')"></p>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+                <p class="overflow-hidden text-white fs-3" v-text="getContent('content-H4')"></p>
+            </div>
+        </div>
+    </div>    
+    <!-- Hung update -->
+    <div class="row bg-dark" style="height: 70px; line-height: 70px;">
+        <div class=" overflow-hidden col d-flex justify-content-center align-items-center">
+            <h3 class="overflow-hidden fs-3 fw-bold text-white text-center m-0" v-text="getContent('content-H5')"></h3>
+        </div>
+    </div>
+    <!-- Cắt thiết kế -->
+    <div class="row position-relative mt-5" >
+        <div class="overflow-hidden col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+            <h6 class="overflow-hidden fs-3 fw-bold text-dark text-center mb-3" v-text="getContent('content-H6')"></h6>
+            <p class="overflow-hidden text-dark col-sm-6 text-center col-lg-6 col-md-6 mx-3" v-text="getContent('content-H7')"></p>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row row-cols-2 row-cols-md-4 g-2 ">
+            <div class="col">
+                <img class="p-1 img-fluid " :src="getImage('{{ url_for('static', filename='images/design-cut/_frame3_img1.jpg')}}')"  alt="Image 1">
+            </div>
+            <div class="col">
+                <img class="p-1 img-fluid " :src="getImage('{{ url_for('static', filename='images/design-cut/_frame3_img2.jpg')}}')" alt="Image 2">
+            </div>
+            <div class="col">
+                <img class="p-1 img-fluid " :src="getImage('{{ url_for('static', filename='images/design-cut/_frame3_img3.jpg')}}')" alt="Image 3">
+            </div>
+            <div class="col">
+                <img class="p-1 img-fluid" :src="getImage('{{ url_for('static', filename='images/design-cut/_frame3_img4.jpg')}}')" alt="Image 4" loading="lazy">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark mt-5">
+        <div class="container d-flex justify-content-center">
+            <div class="w-100" style="max-width: 80%;">
+            <figure class="text-center">
+                <blockquote class="blockquote mt-3">
+                    <p class="text-center text-white " v-text="getContent('content-H46')"></p>
+                </blockquote>
+                <figcaption class="blockquote-footer ">
+                    <cite title="Source Title" v-text="getContent('content-H47')" ></cite>
+                </figcaption>
+              </figure>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-gray ">
+        <div class="container d-flex justify-content-center">
+            <div class="w-100" style="max-width: 80%;">
+                <!-- Phần trên: Hình ảnh bên trái, nội dung bên phải -->
+                <div class="row mb-5 mt-5">
+                    <div class="col-md-6 order-1 order-md-2 d-flex align-items-center">
+                        <div>
+                            <h3 class="overflow-hidden fs-2 fw-bold text-dark mt-5 text-center" v-text="getContent('content-H8')"></h3>
+                            <p class="overflow-hidden text-dark mt-3 text-center" v-text="getContent('content-H9')"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-2 order-md-1 d-flex flex-wrap">
+                        <div class="col-6">
+                            <img class="p-1 img-fluid custom-img-size"  :src="getImage('{{ url_for('static', filename='images/dye/_frame4_img1.jpg')}}')" alt="Image 1" loading="lazy">
+                        </div>
+                        <div class="col-6">
+                            <img class="p-1 img-fluid custom-img-size" :src="getImage('{{ url_for('static', filename='images/dye/_frame4_img2.jpg')}}')" alt="Image 2" loading="lazy">
+                        </div>
+                        <div class="col-6">
+                            <img class="p-1 img-fluid custom-img-size" :src="getImage('{{ url_for('static', filename='images/dye/_frame4_img3.jpg')}}')" alt="Image 3" loading="lazy">
+                        </div>
+                        <div class="col-6">
+                            <img class="p-1 img-fluid custom-img-size" :src="getImage('{{ url_for('static', filename='images/dye/_frame4_img4.jpg')}}')" alt="Image 4" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Phần dưới: Nội dung bên trái, hình ảnh bên phải -->
+                <div class="row flex-row-reverse mt-3">
+                    <div class="col-md-6 order-2 order-md-1 d-flex flex-wrap">
+                        <div class="col-6 ">
+                            <img class="p-1 img-fluid custom-img-size" :src="getImage('{{ url_for('static', filename='images/perm-straight/_frame5_img1.jpg')}}')" alt="Image 1" loading="lazy">
+                        </div>
+                        <div class="col-6 ">
+                            <img class="p-1 img-fluid custom-img-size" :src="getImage('{{ url_for('static', filename='images/perm-straight/_frame5_img2.jpg')}}')" alt="Image 2" loading="lazy">
+                        </div>
+                        <div class="col-6">
+                            <img class="p-1 img-fluid custom-img-size" :src="getImage('{{ url_for('static', filename='images/perm-straight/_frame5_img3.jpg')}}')" alt="Image 3" loading="lazy">
+                        </div>
+                        <div class="col-6">
+                            <img class="p-1 img-fluid custom-img-size" :src="getImage('{{ url_for('static', filename='images/perm-straight/_frame5_img4.jpg')}}')" alt="Image 4" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-1 order-md-2 d-flex align-items-center mt-3">
+                        <div>
+                            <h3 class="overflow-hidden fs-2 fw-bold text-dark mt-1 text-center " v-text="getContent('content-H10')"></h3>
+                            <p class="overflow-hidden text-dark mt-3 text-center" v-text="getContent('content-H11')"></p>
+                        </div>
+                    </div>
+                    <div class=" row order-2 order-md-2 align-items-center">
+                        <div>
+                            <h3 class="overflow-hidden fs-3 text-center text-dark mt-5" v-text="getContent('content-H12')"></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-dark mt-5 " style="height: 70px; line-height: 70px;">
+            <div class="col d-flex justify-content-center align-items-center">
+                <h3 class="overflow-hidden fs-3 fw-bold text-white text-center m-0" v-text="getContent('content-H13')"></h3>
+            </div>
+        </div>
+    </div>
+    <!-- @LEE.HAIR -->
+    <div class="container-fluid text-center">
+        <div class="row position-relative mt-5" >
+            <div class="overflow-hidden col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                <h6 class="overflow-hidden fs-3 fw-bold text-dark text-center mb-3" v-text="getContent('content-H14')"></h6>
+                <p class="overflow-hidden text-dark col-sm-6 p-2 text-center col-lg-6 col-md-6" v-text="getContent('content-H15')"></p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-cols-3 row-cols-md-5 g-2">
+                <div class="col-4 col-md">
+                    <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='video/img_1.jpg')}}')" alt="Image 1" loading="lazy">
+                </div>
+                <div class="col-4 col-md">
+                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_1.mp4')}}')" controls></video>
+                </div>
+                <div class="col-4 col-md">
+                    <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='video/img_2.jpg')}}')" alt="Image 2" loading="lazy">
+                </div>
+                <div class="col-4 col-md">
+                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_2.mp4')}}')" controls></video>
+                </div>
+                <div class="col-4 col-md">
+                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_3.mp4')}}')" controls></video>
+                </div>
+                <div class="col-4 col-md">
+                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_4.mp4')}}')" controls></video>
+                </div>
+                <div class="col-4 col-md">
+                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_5.mp4')}}')" controls></video>
+                </div>
+                <div class="col-4 col-md">
+                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_6.mp4')}}')" controls></video>
+                </div>
+                <div class="col-4 col-md">
+                    <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='video/img_3.jpg')}}')" alt="Image 3" loading="lazy">
+                </div>
+                <div class="col-12 order-last order-md-2 align-items-center mt-3 d-flex flex-column justify-content-center">
+                    <h3 class="overflow-hidden mt-3 text-center" v-text="getContent('content-H16')"></h3>
+                </div>
+            </div>
+        </div>     
+    </div>
+    <!-- Hung Update -->
+    <!-- <div class="container-fluid bg-dark mt-5">
+        <div class="row">
+            <div class="overflow-hidden col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                <h6 class="overflow-hidden fs-3 fw-bold text-light text-center mb-3 mt-5" v-text="getContent('content-H17')"></h6>
+                <p class="overflow-hidden text-light col-sm-6 text-center col-lg-6 col-md-6 mx-2" v-text="getContent('content-H18')"></p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <div class="row row-cols-1 row-cols-md-2 g-2">
+                        <div class="col">
+                        <img class="p-1 img-fluid custom-img-size-1 rounded-2" :src="getImage('{{ url_for('static', filename='images/background/bg-4.jpg')}}')" alt="Image 1" loading="lazy">
+                        </div>
+                        <div class="col order-md-1">
+                        <img class="p-1 img-fluid custom-img-size-1 rounded-2" :src="getImage('{{ url_for('static', filename='images/background/bg-7.jpg')}}')" alt="Image 2" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="mt-5"></div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Các thương hiệu  -->
+    <div class="row bg-dark mt-5" style="height: 70px; line-height: 70px;">
+        <div class=" overflow-hidden col d-flex justify-content-center align-items-center">
+            <h3 class="overflow-hidden fs-3 fw-bold text-white text-center m-0" v-text="getContent('content-H59')"></h3>
+        </div>
+    </div>
+        <div class="container">
+            <div class="row row-cols-3 row-cols-md-5 g-2 mt-5 mb-5">
+                <div class="col-4 col-md ">
+                    <img class="img-fluid custom-img-size-1 " :src="getImage('{{ url_for('static', filename='images/brand/b3.jpg')}}')" alt="Image 1" loading="lazy">
+                </div>
+                <div class="col-4 col-md">
+                    <img class="img-fluid custom-img-size-1 " :src="getImage('{{ url_for('static', filename='images/brand/mydentity.jpg')}}')" alt="Image 2" loading="lazy">
+                </div>
+                <div class="col-4 col-md">
+                    <img class="img-fluid custom-img-size-1 " :src="getImage('{{ url_for('static', filename='images/brand/epres.jpg')}}')" alt="Image 3" loading="lazy">
+                </div>
+                <!-- <div class="col-4 col-md">
+                    <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='images/brand/joico.jpg')}}')" alt="Image 4">
+                </div> -->
+                <div class="col-4 col-md">
+                    <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='images/brand/schawarzkopf.jpg')}}')" alt="Image 4" loading="lazy">
+                </div>
+                <div class="col-4 col-md">
+                    <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='images/brand/olaplex.jpg')}}')" alt="Image 5" loading="lazy">
+                </div>
+                <div class="col-4 col-md">
+                    <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='images/brand/montibello.jpg')}}')" alt="Image 6" loading="lazy">
+                </div>
+                <div class="col-4 col-md">
+                    <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='images/brand/dorado.jpg')}}')" alt="Image 7" loading="lazy">
+                </div>
+                <div class="col-4 col-md">
+                    <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='images/brand/tigi.jpg')}}')" alt="Image 8" loading="lazy">
+                </div>
+                <div class="col-4 col-md">
+                    <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='images/brand/loreal.jpg')}}')" alt="Image 9" loading="lazy">
+                </div>
+                <div class="col-12 order-last order-md-2 align-items-center mt-3 d-flex flex-column justify-content-center">
+                    <h3 class="overflow-hidden mt-3 text-center" v-text="getContent('content-H60')"></h3>
+                </div>
+            </div>
+        </div>     
+    <!--  -->
+    <div class="container-fluid text-center">
+        <div class="row bg-light position-relative" >
+            <div class="overflow-hidden">
+                <h5 class="overflow-hidden  fw-bold text-dark text-center mb-3 mt-3 mx-1 " v-text="getContent('content-H56')"></h5>
+            </div>
+        </div>
+      </div>
+    
+
+    <!-- Phần cuối  -->
+    {% include 'footer.html' %}
+</div> 
+    
+{% endblock html %}
+
+{% block js %}
+<script src="{{ url_for('static', filename='index.js') }}"></script>
+<script src="{{ url_for('static', filename='function.js') }}"></script>
+{% endblock %}

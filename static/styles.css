@@ -1,0 +1,223 @@
+.img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.img_v2{
+    width: 600px;
+    height: 600px;
+}
+
+.bg-gray{
+    background-color: rgb(238, 237, 237);
+}
+.bg-misty-rose-lighter {
+    background-color: rgba(245, 229, 227, 0.877);
+}
+
+.content {
+    line-height: 550px;
+}
+
+.menu-bg {
+    background-image: url('./images/background/bg-14.jpg');
+    padding: 20px;
+
+}
+
+.font-raleway {
+    font-family: 'Raleway', monospace;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 0 !important;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+ .img-fluid {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+ .img-fluid-1 {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+.content-center-1{
+    width: 300px;
+}
+
+
+.position-relative {
+    position: relative;
+}
+
+.position-relative .col {
+    padding-left: calc(10%);
+    padding-right: calc(10%);
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.avatar-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.signature-img {
+    position: absolute;
+    bottom: -30px; /* Điều chỉnh khoảng cách từ đáy ảnh */
+    right: 0;
+}
+
+
+.content-container {
+    position: relative;
+}
+.gallery .col {
+padding: 5px;
+
+  }
+  .gallery .col {
+    padding: 5px;
+  }
+  .custom-container {
+    width: 80%; /* Chiếm 80% màn hình, cách đều hai bên */
+    margin: 0 auto; /* Căn giữa khối */
+}
+.custom-content {
+    padding-left: 7%; /* Cách khung bên trái 10% */
+}
+.custom-iframe {
+    width: 90%; /* Chiếm 90% chiều rộng của cột phải */
+    height: 0;
+    padding-bottom: 80%; /* Đảm bảo hình vuông bằng cách thiết lập padding-bottom bằng với width */
+    position: relative;
+}
+.custom-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:90%;
+    height: 80%;
+
+}
+@media (max-width: 768px) {
+    .offcanvas{
+        height: 50%;
+    }
+    .signature-img {
+        bottom: -50px; /* Điều chỉnh khoảng cách từ đáy ảnh cho thiết bị di động */
+        right: 0; /* Điều chỉnh khoảng cách từ bên phải ảnh cho thiết bị di động */
+    }
+    .maps{
+        min-width: 100%;
+        max-height: 100%;
+    }
+
+    .custom-iframe iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:100%;
+        height: 100%;
+    }
+    
+    .img-fluid-mobile {
+        max-height: 70vh; 
+    }
+    .custom-img-size {
+        max-width: auto; 
+        height: auto;
+        margin-bottom: 1px;
+    }
+    .custom-img-size-1 {
+        max-width: 100%; 
+        height: auto;
+    }
+
+    .responsive-text {
+        font-size: 4vw; /* Kích thước chữ thay đổi theo chiều rộng của viewport */
+    }
+    .custom-content {
+        padding-left: 5%; /* Cách khung bên trái 10% */
+    }
+    
+
+}
+
+/* Loại bỏ overflow: hidden; trên tất cả các phần tử */
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey;
+border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+background: rgb(92, 92, 92);
+border-radius: 10px;
+}
+
+/* *{
+    overflow-x: hidden;
+    padding: 0;
+} */
+
+html{
+    overflow-x: hidden !important;
+    padding-right: 0 !important;
+}
+.offcanvas{
+    background-image: url('./images/background/bg-14.jpg');
+    background-size: cover !important;
+}
+
+.opacity{
+    opacity: 0.5;
+}
+.maps{
+    width: 100%;
+    height: 100%;
+}
+.color-fb{
+    color: white;
+}

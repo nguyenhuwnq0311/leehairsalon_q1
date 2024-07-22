@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+{% endblock css %}
+
+{% block html %}
+<div class="mt-5 mb-lg-4 mb-sm-5 mb-3">&#160;</div>
+<!-- NỘI DUNG CODE NẰM TRONG ĐÂY -->
+<!-- BEGIN -->
+
+
+
+
+
+
+
+
+<!-- END -->
+{% endblock html %}
+
+{% block js %}
+<script src="{{ url_for('static', filename='index.js') }}"></script>
+<script src="{{ url_for('static', filename='function.js') }}"></script>
+{% endblock %}
