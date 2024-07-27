@@ -41,6 +41,7 @@ body {
     overflow-x: hidden;
 }
 
+
 .container-fluid {
     margin-right: 0;
     margin-left: 0;
@@ -77,6 +78,45 @@ body {
     width: 300px;
 }
 
+.image-container {
+    position: relative;
+    width: auto;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container .main-img {
+    position: relative;
+    top: 15%;
+    right: 0;
+    transform: translate(50%, 0%);
+    width: auto;
+    height: 100%;
+    margin-top: 0;
+    z-index: 0;
+}
+
+.small-img1 {
+    position: relative;
+    top: 30%;
+    right: -10%;
+    transform: translate(20%, -30%);
+    width: 30%;  /* Reduced by 5% from 30% */
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.small-img2 {
+    position: relative;
+    bottom: -30%;
+    left: -10%;
+    transform: translate(-20%, 30%);
+    width: 60%;  /* Reduced by 5% from 300px */
+    height: 40%;  /* Reduced by 5% from 250px */
+    border-radius: 0.5rem;
+}
 
 .position-relative {
     position: relative;
@@ -174,6 +214,23 @@ padding: 5px;
     .custom-content {
         padding-left: 5%; /* Cách khung bên trái 10% */
     }
+    .hero-section {
+        flex-direction: column;
+    }
+    .image-container .small-img2, .small-img1 {
+        display: none;
+    }
+    .image-container .main-img {
+        position: relative;
+        top: 0px;
+        right: 7%;
+        width: 100%;
+        margin-top: 0;
+    }
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
     
 
 }
@@ -202,22 +259,41 @@ border-radius: 10px;
     padding: 0;
 } */
 
-html{
+
+html {
+    scroll-behavior: smooth;
     overflow-x: hidden !important;
     padding-right: 0 !important;
 }
-.offcanvas{
+
+body {
+    transition: all 0.3s ease-in-out;
+}
+
+.offcanvas {
     background-image: url('./images/background/bg-14.jpg');
     background-size: cover !important;
 }
 
-.opacity{
+.opacity {
     opacity: 0.5;
 }
-.maps{
+
+.maps {
     width: 100%;
     height: 100%;
 }
-.color-fb{
+
+.color-fb {
     color: white;
+} 
+
+img, video, p, h3, h5, h6 {
+    transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
+
+img:hover, video:hover, p:hover, h3:hover, h5:hover, h6:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+

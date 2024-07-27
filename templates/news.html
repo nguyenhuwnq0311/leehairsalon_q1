@@ -10,47 +10,47 @@
         {% include 'navbar.html' %}
     </div>
     <!--  -->
-    <!-- <div class="container-fluid bg-light">
-        <div class="container ">
-            <div class="row g-0 bg-light position-relative">
-            <div class="col-md-6 mb-md-0 p-md-4">
-              <img src="{{ url_for('static', filename='images/price_list/img-6.jpg') }}" class="mt-5" alt="Image 1" style="width: 80%;" loading="lazy">
-            </div>
-            <div class="col-md-6 p-4 ps-md-0 mt-1 mb-5">
-              <h5 class="mt-0">Columns with stretched link</h5>
-              <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-              <a href="#" class="stretched-link">Go somewhere</a>
-            </div>
-          </div>
-        </div> 
-    </div> -->
-    <!--  -->
-    
-    <!--  -->
-    <!-- <div class="container-fluid bg-light">
-        <div class="container">
-            <div class="row g-0 bg-light position-relative">
-                <div class="col-md-6 p-4 ps-md-0 mt-5 mb-5">
-                    <h5 class="mt-0">Các cột với liên kết kéo dài</h5>
-                    <p>Một ví dụ khác về nội dung giữ chỗ cho thành phần tùy chỉnh này. Nó nhằm mục đích mô phỏng những gì nội dung thực tế có thể trông như thế nào, và chúng tôi đang sử dụng nó ở đây để cung cấp cho thành phần một chút nội dung và kích thước.</p>
-                    <a href="#" class="stretched-link">Đi đến đâu đó</a>
-                </div>
-                <div class="col-md-6 mb-md-0 p-md-4">
-                    <img src="..." class="w-80 mt-5 mb-5" alt="...">
-                </div>
-            </div>
-        </div> 
-    </div> -->
-    
-
-
-    <div class="container-fluid text-center">
+    <div class="container-fluid  text-center">
         <div class="row bg-light position-relative" >
             <div class="overflow-hidden">
-                <h5 class="overflow-hidden  fw-bold text-dark text-center mb-3 mt-3 mx-1" v-text="getContent('content-H56')"></h5>
+                <h5 class="overflow-hidden fw-bold text-dark text-center mb-4 mt-4 responsive-text mx-2" v-text="getContent('content-H0')"></>
             </div>
         </div>
       </div>
+    <!-- Hero Section -->
+    <div class="container-fluid bg-dark">
+        <div class="container">
+            <div class="row hero-section">
+                <div class="col-lg-6 col-md-6 col-12 py-5 text-light text-lg-start text-md-start text-center">
+                    <p class="fs-3 mt-5">CHÀO MỪNG BẠN ĐẾN VỚI</p>
+                    <h1 class="display-3 lead fw-bold py-3">LEE HAIR SALON</h1>
+                    <p class="fs-5 mb-5">Cập nhật các tin tức mới nhất tại trang chủ của chúng tôi.</p>
+                    <!-- <p class="fs-5 mb-5">331 Trần Hưng Đạo, Phường Cô Giang, Quận 1, Thành phố Hồ Chí Minh</p> -->
+                    <div class="s_hr text-start pb32 pt4" data-snippet="s_hr" data-name="Separator">
+                        <hr class="w-100 mx-auto"/>
+                    </div>
+                    <a class="btn btn-primary btn-lg" href="https://www.facebook.com/hairsalonleephat/" role="button" target="_blank">Theo dõi ngay</a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="d-flex justify-content-center align-items-center position-relative image-container">
+                        <img src="{{ url_for('static', filename='images/background/bg-6.jpg')}}" class=" ms-5 img-fluid rounded main-img shadow-md" alt="Main image">
+                        <img src="{{ url_for('static', filename='images/avatar/Founder/avatar-2.jpg')}}" class=" ms-5 position-absolute small-img1 rounded-2 shadow-md" alt="Small image 1">
+                        <img src="{{ url_for('static', filename='images/about-us/img-6.jpg')}}" class=" ms-5 position-absolute small-img2 rounded-2 shadow-md" alt="Small image 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-5"></div>
+    </div>
+    <!-- End Hero Section -->
+
+    <div class="container-fluid text-center">
+        <div class="row bg-light position-relative">
+            <div class="overflow-hidden">
+                <h5 class="overflow-hidden fw-bold text-dark text-center mb-3 mt-3 mx-1" v-text="getContent('content-H56')"></h5>
+            </div>
+        </div>
+    </div>
     {% include 'footer.html' %}
 </div> 
     
