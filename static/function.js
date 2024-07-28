@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Website has loaded.');
 
-    window.addEventListener('scroll', function() {
-        let elements = document.querySelectorAll('img, video, p, h3, h5, h6');
+    function handleScroll() {
+        let elements = document.querySelectorAll('img, video, p, h3, h4, h5, h6');
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         elements.forEach(function(element) {
@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 element.style.transform = 'translateY(20px)';
             }
         });
-    });
+    }
 
+    window.addEventListener('scroll', handleScroll);
     window.dispatchEvent(new Event('scroll'));
 });

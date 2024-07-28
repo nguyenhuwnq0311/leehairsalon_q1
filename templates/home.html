@@ -50,13 +50,13 @@
     <div class="container ">
         <div class="row row-cols-2 row-cols-md-4 g-2 ">
             <div class="col">
-                <img class="p-1 img-fluid " :src="getImage('{{ url_for('static', filename='images/design-cut/_frame3_img1.jpg')}}')"  alt="Image 1">
+                <img class="p-1 img-fluid " :src="getImage('{{ url_for('static', filename='images/design-cut/_frame3_img1.jpg')}}')"  alt="Image 1" loading="lazy">
             </div>
             <div class="col">
-                <img class="p-1 img-fluid " :src="getImage('{{ url_for('static', filename='images/design-cut/_frame3_img2.jpg')}}')" alt="Image 2">
+                <img class="p-1 img-fluid " :src="getImage('{{ url_for('static', filename='images/design-cut/_frame3_img2.jpg')}}')" alt="Image 2" loading="lazy">
             </div>
             <div class="col">
-                <img class="p-1 img-fluid " :src="getImage('{{ url_for('static', filename='images/design-cut/_frame3_img3.jpg')}}')" alt="Image 3">
+                <img class="p-1 img-fluid " :src="getImage('{{ url_for('static', filename='images/design-cut/_frame3_img3.jpg')}}')" alt="Image 3" loading="lazy">
             </div>
             <div class="col">
                 <img class="p-1 img-fluid" :src="getImage('{{ url_for('static', filename='images/design-cut/_frame3_img4.jpg')}}')" alt="Image 4" loading="lazy">
@@ -154,25 +154,25 @@
                     <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='video/img_1.jpg')}}')" alt="Image 1" loading="lazy">
                 </div>
                 <div class="col-4 col-md">
-                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_1.mp4')}}')" controls></video>
+                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_1.mp4')}}')" controls preload="auto"></video>
                 </div>
                 <div class="col-4 col-md">
                     <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='video/img_2.jpg')}}')" alt="Image 2" loading="lazy">
                 </div>
                 <div class="col-4 col-md">
-                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_2.mp4')}}')" controls></video>
+                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_2.mp4')}}')" controls preload="auto"></video>
                 </div>
                 <div class="col-4 col-md">
-                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_3.mp4')}}')" controls></video>
+                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_3.mp4')}}')" controls preload="auto"></video>
                 </div>
                 <div class="col-4 col-md">
-                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_4.mp4')}}')" controls></video>
+                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_4.mp4')}}')" controls preload="auto"></video>
                 </div>
                 <div class="col-4 col-md">
-                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_5.mp4')}}')" controls></video>
+                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_5.mp4')}}')" controls preload="auto"></video>
                 </div>
                 <div class="col-4 col-md">
-                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_6.mp4')}}')" controls></video>
+                    <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_6.mp4')}}')" controls preload="auto"></video>
                 </div>
                 <div class="col-4 col-md">
                     <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='video/img_3.jpg')}}')" alt="Image 3" loading="lazy">
@@ -184,29 +184,6 @@
         </div>     
     </div>
     <!-- Hung Update -->
-    <!-- <div class="container-fluid bg-dark mt-5">
-        <div class="row">
-            <div class="overflow-hidden col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">
-                <h6 class="overflow-hidden fs-3 fw-bold text-light text-center mb-3 mt-5" v-text="getContent('content-H17')"></h6>
-                <p class="overflow-hidden text-light col-sm-6 text-center col-lg-6 col-md-6 mx-2" v-text="getContent('content-H18')"></p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10">
-                    <div class="row row-cols-1 row-cols-md-2 g-2">
-                        <div class="col">
-                        <img class="p-1 img-fluid custom-img-size-1 rounded-2" :src="getImage('{{ url_for('static', filename='images/background/bg-4.jpg')}}')" alt="Image 1" loading="lazy">
-                        </div>
-                        <div class="col order-md-1">
-                        <img class="p-1 img-fluid custom-img-size-1 rounded-2" :src="getImage('{{ url_for('static', filename='images/background/bg-7.jpg')}}')" alt="Image 2" loading="lazy">
-                        </div>
-                    </div>
-                    <div class="mt-5"></div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <!-- Các thương hiệu  -->
     <div class="row bg-dark mt-5" style="height: 70px; line-height: 70px;">
         <div class=" overflow-hidden col d-flex justify-content-center align-items-center">
@@ -224,9 +201,6 @@
                 <div class="col-4 col-md">
                     <img class="img-fluid custom-img-size-1 " :src="getImage('{{ url_for('static', filename='images/brand/epres.jpg')}}')" alt="Image 3" loading="lazy">
                 </div>
-                <!-- <div class="col-4 col-md">
-                    <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='images/brand/joico.jpg')}}')" alt="Image 4">
-                </div> -->
                 <div class="col-4 col-md">
                     <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='images/brand/schawarzkopf.jpg')}}')" alt="Image 4" loading="lazy">
                 </div>
