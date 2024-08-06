@@ -185,16 +185,23 @@ padding: 5px;
     body {
         overflow-x: hidden;
       }
+      .img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        z-index: -1;
+    }
       
       /* Đảm bảo navbar không gây ra khoảng trống */
       .navbar {
         width: 100%;
+ 
       }
       
       /* Căn chỉnh offcanvas để không gây ra khoảng trống */
       .offcanvas {
         max-width: 100%;
-        width: 100%;
+        height: 50%;
       }
       
       /* Đảm bảo các phần tử bên trong không gây ra overflow */

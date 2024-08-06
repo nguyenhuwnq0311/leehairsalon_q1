@@ -18,7 +18,7 @@
         </div>
       </div>
     <div class="row position-relative">
-        <img class="d-flex img w-100"  :src="getImage('{{ url_for('static', filename='images/background/bg-1.jpg')}}')" alt="Background Image" loading="lazy">
+        <img class="d-flex img"  :src="getImage('{{ url_for('static', filename='images/background/bg-1.jpg')}}')" alt="Background Image" loading="lazy">
         <div class="position-absolute top-50 start-50 translate-middle w-100 text-center">
             <div class="d-flex justify-content-center">
                 <p class="overflow-hidden text-white fs-3" v-text="getContent('content-H1')"></p>
@@ -37,7 +37,7 @@
     <!-- Hung update -->
     <div class="row bg-dark" style="height: 70px; line-height: 70px;">
         <div class=" overflow-hidden col d-flex justify-content-center align-items-center">
-            <h3 class="overflow-hidden fs-3 fw-bold text-white text-center m-0" v-text="getContent('content-H5')"></h3>
+            <h3 class="overflow-hidden fs-3 fw-bold text-white text-center m-0 " v-text="getContent('content-H5')"></h3>
         </div>
     </div>
     <!-- Cắt thiết kế -->
@@ -63,9 +63,9 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-dark mt-5">
+    <div class="container-fluid bg-dark mt-5 ">
         <div class="container d-flex justify-content-center">
-            <div class="w-100" style="max-width: 80%;">
+            <div class="w-100" style="max-width: 95%;">
             <figure class="text-center">
                 <blockquote class="blockquote mt-3">
                     <p class="text-center text-white " v-text="getContent('content-H46')"></p>
@@ -79,12 +79,12 @@
     </div>
     <div class="container-fluid bg-gray ">
         <div class="container d-flex justify-content-center">
-            <div class="w-100" style="max-width: 80%;">
+            <div class="w-100" style="max-width: 95%;">
                 <!-- Phần trên: Hình ảnh bên trái, nội dung bên phải -->
                 <div class="row mb-5 mt-5">
                     <div class="col-md-6 order-1 order-md-2 d-flex align-items-center">
                         <div>
-                            <h3 class="overflow-hidden fs-2 fw-bold text-dark mt-5 text-center" v-text="getContent('content-H8')"></h3>
+                            <h3 class="overflow-hidden fs-2 fw-bold text-dark text-center" v-text="getContent('content-H8')"></h3>
                             <p class="overflow-hidden text-dark mt-3 text-center" v-text="getContent('content-H9')"></p>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
                 </div>
     
                 <!-- Phần dưới: Nội dung bên trái, hình ảnh bên phải -->
-                <div class="row flex-row-reverse mt-3">
+                <div class="row flex-row-reverse ">
                     <div class="col-md-6 order-2 order-md-1 d-flex flex-wrap">
                         <div class="col-6 ">
                             <img class="p-1 img-fluid custom-img-size" :src="getImage('{{ url_for('static', filename='images/perm-straight/_frame5_img1.jpg')}}')" alt="Image 1" loading="lazy">
@@ -122,7 +122,7 @@
                     </div>
                     <div class="col-md-6 order-1 order-md-2 d-flex align-items-center mt-3">
                         <div>
-                            <h3 class="overflow-hidden fs-2 fw-bold text-dark mt-1 text-center " v-text="getContent('content-H10')"></h3>
+                            <h3 class="overflow-hidden fs-2 fw-bold text-dark text-center " v-text="getContent('content-H10')"></h3>
                             <p class="overflow-hidden text-dark mt-3 text-center" v-text="getContent('content-H11')"></p>
                         </div>
                     </div>
