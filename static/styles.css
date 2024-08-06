@@ -182,9 +182,43 @@ padding: 5px;
 
 }
 @media (max-width: 768px) {
-    .offcanvas{
-        height: 50%;
-    }
+    body {
+        overflow-x: hidden;
+      }
+      
+      /* Đảm bảo navbar không gây ra khoảng trống */
+      .navbar {
+        width: 100%;
+      }
+      
+      /* Căn chỉnh offcanvas để không gây ra khoảng trống */
+      .offcanvas {
+        max-width: 100%;
+        width: 100%;
+      }
+      
+      /* Đảm bảo các phần tử bên trong không gây ra overflow */
+      .container-fluid {
+        padding: 0;
+        margin: 0;
+      }
+      
+      /* Căn chỉnh các phần tử bên trong nav */
+      .navbar .container-fluid .d-flex {
+        flex-grow: 1;
+        justify-content: space-between;
+      }
+      
+      .navbar .navbar-brand {
+        margin-right: auto;
+        margin-left: auto;
+      }
+      
+      /* Căn chỉnh hình ảnh ngôn ngữ */
+      .navbar .me-3 img {
+        display: block;
+        margin: 0 auto;
+      }
     .signature-img {
         bottom: -50px; /* Điều chỉnh khoảng cách từ đáy ảnh cho thiết bị di động */
         right: 0; /* Điều chỉnh khoảng cách từ bên phải ảnh cho thiết bị di động */
