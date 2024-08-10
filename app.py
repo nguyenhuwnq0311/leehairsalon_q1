@@ -2,9 +2,6 @@ from flask import Flask, render_template, redirect, url_for
 
 app = Flask(__name__)
 
-@app.route('/googled4f938817bed9f64')
-def default():
-    return render_template('googled4f938817bed9f64.html')
 @app.route('/')
 def default():
     return redirect(url_for('home'))
