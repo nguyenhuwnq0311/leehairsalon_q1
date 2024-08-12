@@ -96,7 +96,7 @@ body {
 
 .image-container .main-img {
     position: relative;
-    top: 15%;
+    top: 5%;
     right: 0;
     transform: translate(50%, 0%);
     width: auto;
@@ -107,21 +107,21 @@ body {
 
 .small-img1 {
     position: relative;
-    top: 30%;
-    right: -5%;
+    top: 20%;
+    right: -2%;
     transform: translate(50%, -50%);
-    width: 30%;  /* Reduced by 5% from 30% */
+    width: 35%;  /* Reduced by 5% from 30% */
     height: auto;
     border-radius: 0.5rem;
 }
 
 .small-img2 {
     position: relative;
-    bottom: -30%;
-    left: -5%;
+    bottom: -15%;
+    left: -25%;
     transform: translate(-50%, 50%);
-    width: 60%;  /* Reduced by 5% from 300px */
-    height: 40%;  /* Reduced by 5% from 250px */
+    width: 75%;  /* Reduced by 5% from 300px */
+    height: 35%;  /* Reduced by 5% from 250px */
     border-radius: 0.5rem;
 }
 
@@ -250,12 +250,7 @@ padding: 5px;
     .image-container .small-img2, .small-img1 {
         display: none;
     }
-    .image-container .main-img {
-        position: relative;
-        top: 0px;
-        width: 100%;
-        margin-top: 0;
-    }
+
     .image-container {
         flex-direction: column;
         align-items: center;
