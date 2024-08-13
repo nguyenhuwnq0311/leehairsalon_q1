@@ -18,17 +18,17 @@
         </div>
       </div>
       <div class="container-fluid bg-gray">
-        <div class="container py-5">
+        <div class="container">
             <div class="row hero-section">
-                <div class="col-lg-6 col-md-12 col-ms-12 col-12 py-5 text-dark text-lg-start text-md-start text-center">
-                    <p class="fs-5  fw-bold" v-text="getContent('content-H1')"></p>
-                    <h1 class="display-3 lead fw-bold py-3" v-text="getContent('content-H2')" ></h1>
+                <div class="col-lg-6 col-md-12 col-ms-12 col-12 text-dark text-lg-start text-md-start text-center py-5">
+                    <p class="fs-5 mt-5 fw-bold" v-text="getContent('content-H1')"></p>
+                    <h1 class="display-3 lead fw-bold py-5" v-text="getContent('content-H2')" ></h1>
                     <p class="fs-5 mb-5" v-text="getContent('content-H3')"></p>
                     <p class="fs-5 mb-5" v-text="getContent('content-H4')"></p>
-                    <a class="btn btn-primary btn-lg  " href="https://booking.easysalon.vn/leehairsalonq1" role="button" target="_blank">Đặt lịch ngay</a>
+                    <a class="btn btn-secondary btn-lg  " href="https://booking.easysalon.vn/leehairsalonq1" role="button" target="_blank">Đặt lịch ngay</a>
                 </div>
                 <div class="col-lg-6 col-md-12 col-ms-12 col-12">
-                    <div class="d-flex justify-content-center align-items-center position-relative image-container">
+                    <div class="d-flex justify-content-center align-items-center position-relative image-container mb-5">
                         <img src="{{ url_for('static', filename='images/background/bg-15.jpg')}}" class="img-fluid rounded main-img shadow-md" alt="Main image">
                         <img src="{{ url_for('static', filename='images/avatar/Founder/avatar-2.jpg')}}" class="position-absolute small-img1 rounded-2 shadow-md" alt="Small image 1">
                         <img src="{{ url_for('static', filename='images/about-us/img-6.jpg')}}" class=" position-absolute small-img2 rounded-2 shadow-md " alt="Small image 2">
