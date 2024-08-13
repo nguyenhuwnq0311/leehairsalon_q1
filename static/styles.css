@@ -87,42 +87,44 @@ body {
 
 .image-container {
     position: relative;
-    width: auto;
-    height: 80%;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;  /* Thêm khoảng cách với phần text phía trên */
 }
 
 .image-container .main-img {
     position: relative;
-    top: 5%;
-    right: 0;
-    transform: translate(50%, 0%);
-    width: auto;
-    height: 100%;
-    margin-top: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    transform: translate(0, 0);  /* Đặt về vị trí gốc */
     z-index: 0;
+    margin-top: 20px;
 }
 
 .small-img1 {
-    position: relative;
-    top: 20%;
-    right: -2%;
-    transform: translate(50%, -50%);
-    width: 35%;  /* Reduced by 5% from 30% */
+    position: absolute;
+    top: 15%;
+    right: -5%;
+    transform: translate(0%, -70%);
+    width: 35%;
     height: auto;
     border-radius: 0.5rem;
+    z-index: 1;  /* Đảm bảo ảnh nhỏ nằm trên ảnh lớn */
 }
 
 .small-img2 {
-    position: relative;
-    bottom: -15%;
-    left: -25%;
+    position: absolute;
+    bottom: -3%;
+    left: -35%;
     transform: translate(-50%, 50%);
-    width: 75%;  /* Reduced by 5% from 300px */
-    height: 35%;  /* Reduced by 5% from 250px */
+    width: 75%;
+    height: 30%;
     border-radius: 0.5rem;
+    z-index: 1;  /* Đảm bảo ảnh nhỏ nằm trên ảnh lớn */
 }
 
 .position-relative {
@@ -183,29 +185,29 @@ padding: 5px;
 }
 @media (max-width: 768px) {
     body {
-        overflow-x: hidden;
-      }
-      .img {
-        width: 100%;
-        height: 500px;
-        object-fit: cover;
-        z-index: -1;
+    overflow-x: hidden;
     }
-      
-      /* Đảm bảo navbar không gây ra khoảng trống */
-      .navbar {
-        width: 100%;
- 
-      }
-      
-      /* Căn chỉnh offcanvas để không gây ra khoảng trống */
-      .offcanvas {
-        max-width: 100%;
-        height: 50%;
-      }
-      .offcanvas-body{
-        max-width: 100%;
-      }
+    .img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    z-index: -1;
+    }
+    
+    /* Đảm bảo navbar không gây ra khoảng trống */
+    .navbar {
+    width: 100%;
+
+    }
+    
+    /* Căn chỉnh offcanvas để không gây ra khoảng trống */
+    .offcanvas {
+    max-width: 100%;
+    height: 50%;
+    }
+    .offcanvas-body{
+    max-width: 100%;
+    }
       
 
     .signature-img {
@@ -239,7 +241,9 @@ padding: 5px;
     }
 
     .responsive-text {
-        font-size: 4vw; /* Kích thước chữ thay đổi theo chiều rộng của viewport */
+        font-size: 4.5vw; /* Kích thước chữ thay đổi theo chiều rộng của viewport */
+        padding-left: 2%; 
+        padding-right: 2%; 
     }
     .custom-content {
         padding-left: 5%; /* Cách khung bên trái 10% */
