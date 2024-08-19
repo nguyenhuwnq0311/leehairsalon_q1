@@ -80,6 +80,20 @@ const app = createApp({
                     'content-H58': 'Copyright © INet Mowxl | All rights reserved.',
                     'content-H59': 'TRUSTED BRAND',
                     'content-H60': 'More...',
+                    'content-H61': 'DISCOVER YOUR OWN STYLE',
+                    'content-H62': 'Update the latest news on our homepage.',
+                    'content-H63': 'Follow now',
+                    'content-H64': 'NEWS',
+                    'content-H65': 'SCIENTIFIC TECHNOLOGY AND BREAKTHROUGH IN THE HAIR INDUSTRY',
+                    'content-H66': 'A new breakthrough for the hair industry by Dr. Eric Pressly promises to bring Vietnamese customers a scientifically proven hair bond repair treatment product, in just one treatment, vegan and effective immediately from the first use.',
+                    'content-H67': 'PROFESSIONAL HAIR RESTORATION',
+                    'content-H68': 'Keratin Complex is a professional hair restoration product line that has made a strong impression on the international market over the past 20 years. This product is chosen by Lee Hair Salon to provide the perfect solution for damaged hair, ensuring your hair is always in the best condition.',
+                    'content-H69': 'THE PERFECT CHOICE FOR SHINY HAIR',
+                    'content-H70': 'ATS InCure CMC is an advanced hair care solution, developed with an exclusive formula to bring shiny, soft and strong hair. This product is chosen by Lee Hair Salon to meet the comprehensive hair care needs of customers.',
+                    'content-H71': 'SEE DETAILS →',
+                    'content-H72': '"EXQUISITE BEAUTY, TOP QUALITY."',
+                    'content-H73': '"CREATE LASTING BEAUTY, SHINE EVERY DAY."',
+
 
 
 
@@ -159,6 +173,19 @@ const app = createApp({
                     'content-H58': 'Copyright © INet Mowxl | All rights reserved.',
                     'content-H59': 'THƯƠNG HIỆU TIN DÙNG',
                     'content-H60': 'More...',
+                    'content-H61': 'KHÁM PHÁ PHONG CÁCH CỦA RIÊNG BẠN',
+                    'content-H62': 'Cập nhật các tin tức mới nhất tại trang chủ của chúng tôi.',
+                    'content-H63': 'Theo dõi ngay',
+                    'content-H64': 'TIN TỨC',
+                    'content-H65': 'CÔNG NGHỆ MANG TÍNH KHOA HỌC VÀ ĐỘT PHÁ NGÀNH TÓC',
+                    'content-H66': 'Một bước đột phá mới cho ngành tóc của tiến sĩ Eric Pressly hứa hẹn sẽ mang đến cho khách hàng Việt Nam một sản phẩm chữa trị hàn gắn liên kết tóc được khoa học chứng minh, chỉ trong một bước liệu trình, thuần chay và hiệu quả tức thì ngay từ lần đầu sử dụng.',
+                    'content-H67': 'PHỤC HỒI TÓC CHUYÊN NGHIỆP',
+                    'content-H68': 'Keratin Complex là dòng sản phẩm phục hồi tóc chuyên nghiệp đã tạo dấu ấn mạnh mẽ trên thị trường quốc tế trong suốt 20 năm qua. Sản phẩm này được Lee Hair Salon lựa chọn để mang lại giải pháp hoàn hảo cho những mái tóc bị hư tổn, đảm bảo tóc bạn luôn trong tình trạng tốt nhất.',
+                    'content-H69': 'SỰ LỰA CHỌN HOÀN HẢO CHO MÁI TÓC SÁNG BÓNG',
+                    'content-H70': 'ATS InCure CMC là giải pháp chăm sóc tóc tiên tiến, được phát triển với công thức độc quyền để mang lại mái tóc sáng bóng, mềm mại và chắc khỏe. Sản phẩm này được Lee Hair Salon lựa chọn để đáp ứng nhu cầu chăm sóc tóc toàn diện cho khách hàng.',
+                    'content-H71': 'XEM CHI TIẾT →',
+                    'content-H72': '"VẺ ĐẸP TINH TẾ, CHẤT LƯỢNG HÀNG ĐẦU."',
+                    'content-H73': '"TẠO DỰNG VẺ ĐẸP BỀN VỮNG, TỎA SÁNG MỖI NGÀY."',
 
 
                 }

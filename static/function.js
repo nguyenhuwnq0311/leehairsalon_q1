@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Website has loaded.');
 
     function handleScroll() {
-        let elements = document.querySelectorAll('img, video, p, h3, h4, h5, h6');
+        let elements = document.querySelectorAll('img, video, p, h3, h4, h5, h6, li');
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         elements.forEach(function(element) {

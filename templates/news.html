@@ -22,10 +22,10 @@
         <div class="container">
             <div class="row hero-section">
                 <div class="col-lg-6 col-md-12 col-ms-12 col-12 text-light text-lg-start text-md-start text-center py-5">
-                    <p class="fs-5 mt-5 fw-bold" >KHÁM PHÁ PHONG CÁCH CỦA RIÊNG BẠN</p>
-                    <h1 class="display-3 lead fw-bold py-4" >LEE HAIR SALON</h1>
-                    <p class="fs-5 mb-5" >Cập nhật các tin tức mới nhất tại trang chủ của chúng tôi.</p>
-                    <a class="btn btn-light btn-lg " href="https://www.facebook.com/hairsalonleephat/" role="button" target="_blank">Theo dõi ngay</a>
+                    <p class="fs-5 mt-5 fw-bold" v-text="getContent('content-H61')" ></p>
+                    <h1 class="display-3 lead fw-bold py-4" v-text="getContent('content-H2')"></h1>
+                    <p class="fs-5 mb-5" v-text="getContent('content-H62')"></p>
+                    <a class="btn btn-light btn-lg " href="https://www.facebook.com/hairsalonleephat/" role="button" target="_blank" v-text="getContent('content-H63')"></a>
                 </div>
                 <div class="col-lg-6 col-md-12 col-ms-12 col-12">
                     <div class="d-flex justify-content-center align-items-center position-relative image-container mb-5">
@@ -43,7 +43,7 @@
     <div class="container-fluid bg-gray">
         <div class="row" style="height: 70px; line-height: 70px;">
             <div class=" overflow-hidden col d-flex justify-content-center align-items-center">
-                <h3 class="overflow-hidden fs-3 fw-bold text-dark text-center m-0 ">TIN TỨC</h3>
+                <h3 class="overflow-hidden fs-3 fw-bold text-dark text-center m-0 " v-text="getContent('content-H64')" ></h3>
             </div>
         </div>
     </div>
@@ -55,11 +55,11 @@
                 <img src="{{ url_for('static', filename='images/news/new-4.jpg')}}" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h3 class="card-title"><strong>EPRES</strong></h3>
-                  <p class="card-text"><strong>CÔNG NGHỆ MANG TÍNH KHOA HỌC VÀ ĐỘT PHÁ NGÀNH TÓC</strong>
-                    <li>Một bước đột phá mới cho ngành tóc của tiến sĩ Eric Pressly hứa hẹn sẽ mang đến cho khách hàng Việt Nam một sản phẩm chữa trị hàn gắn liên kết tóc được khoa học chứng minh, chỉ trong một bước liệu trình, thuần chay và hiệu quả tức thì ngay từ lần đầu sử dụng.</li>
+                  <p class="card-text fw-bold" v-text="getContent('content-H65')"></p>
+                  <p class="" v-text="getContent('content-H66')"></p>
                 </div>
                 <div class="card-footer">
-                  <a href="https://www.facebook.com/hairsalonleephat" role="button" target="_blank" class="btn btn-secondary btn-m " >XEM CHI TIẾT →</a>
+                  <a href="https://www.facebook.com/hairsalonleephat" role="button" target="_blank" class="btn btn-secondary btn-m " v-text="getContent('content-H71')"></a>
                 </div>
               </div>
             </div>
@@ -68,11 +68,11 @@
                   <img src="{{ url_for('static', filename='images/news/new-1.jpg')}}"  class="card-img-top" alt="...">
                   <div class="card-body">
                     <h3 class="card-title"><strong>KERATIN COMPLEX</strong></h3>
-                    <p class="card-text"><strong>PHỤC HỒI TÓC CHUYÊN NGHIỆP</strong>
-                        <li>Keratin Complex là dòng sản phẩm phục hồi tóc chuyên nghiệp đã tạo dấu ấn mạnh mẽ trên thị trường quốc tế trong suốt 20 năm qua. Sản phẩm này được Lee Hair Salon lựa chọn để mang lại giải pháp hoàn hảo cho những mái tóc bị hư tổn, đảm bảo tóc bạn luôn trong tình trạng tốt nhất.</li>
+                    <p class="card-text fw-bold" v-text="getContent('content-H67')"></p>
+                    <p class="" v-text="getContent('content-H68')"></p>                 
                   </div>
                   <div class="card-footer">
-                    <a href="https://www.facebook.com/hairsalonleephat" role="button" target="_blank" class="btn btn-secondary btn-m ">XEM CHI TIẾT →</a>
+                    <a href="https://www.facebook.com/hairsalonleephat" role="button" target="_blank" class="btn btn-secondary btn-m " v-text="getContent('content-H71')"></a>
                   </div>
                 </div>
               </div>
@@ -81,11 +81,11 @@
                 <img src="{{ url_for('static', filename='images/news/new-3.jpg')}}" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h3 class="card-title"><strong>ATS INCURE CMC</strong></h3>
-                  <p class="card-text"><strong>SỰ LỰA CHỌN HOÀN HẢO CHO MÁI TÓC SÁNG BÓNG</strong></p>
-                  <li>ATS InCure CMC là giải pháp chăm sóc tóc tiên tiến, được phát triển với công thức độc quyền để mang lại mái tóc sáng bóng, mềm mại và chắc khỏe. Sản phẩm này được Lee Hair Salon lựa chọn để đáp ứng nhu cầu chăm sóc tóc toàn diện cho khách hàng.</li>
+                  <p class="card-text fw-bold" v-text="getContent('content-H69')"></p>
+                  <p class="" v-text="getContent('content-H70')"></p> 
                 </div>
                 <div class="card-footer">
-                  <a href="https://www.facebook.com/hairsalonleephat" role="button" target="_blank" class="btn btn-secondary btn-m ">XEM CHI TIẾT →</a>
+                  <a href="https://www.facebook.com/hairsalonleephat" role="button" target="_blank" class="btn btn-secondary btn-m " v-text="getContent('content-H71')"></a>
                 </div>
               </div>
             </div>
