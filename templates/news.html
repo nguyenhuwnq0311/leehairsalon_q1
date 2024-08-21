@@ -18,78 +18,78 @@
         </div>
       </div>
     <!-- Hero Section -->
-    <div class="container-fluid bg-dark">
-        <div class="container">
-            <div class="row hero-section">
-                <div class="col-lg-6 col-md-12 col-ms-12 col-12 text-light text-lg-start text-md-start text-center py-5">
-                    <p class="fs-5 mt-5 fw-bold" v-text="getContent('content-H61')" ></p>
-                    <h1 class="display-3 lead fw-bold py-4" v-text="getContent('content-H2')"></h1>
-                    <p class="fs-5 mb-5" v-text="getContent('content-H62')"></p>
-                    <a class="btn btn-light btn-lg " href="https://www.facebook.com/hairsalonleephat/" role="button" target="_blank" v-text="getContent('content-H63')"></a>
-                </div>
-                <div class="col-lg-6 col-md-12 col-ms-12 col-12">
-                    <div class="d-flex justify-content-center align-items-center position-relative image-container mb-5">
-                        <img src="{{ url_for('static', filename='images/background/bg-5.jpg')}}" class="img-fluid rounded main-img shadow-md" alt="Main image">
-                        <img src="{{ url_for('static', filename='images/avatar/Founder/avatar-4.jpg')}}" class="position-absolute small-img1 rounded-2 shadow-md" alt="Small image 1">
-                        <img src="{{ url_for('static', filename='images/about-us/img-5.jpg')}}" class=" position-absolute small-img2 rounded-2 shadow-md " alt="Small image 2">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="container-fluid bg-gray">
+      <div class="container">
+          <div class="row hero-section responsive-text">
+              <div class="col-lg-6 col-md-12 col-sm-12 col-12 text-dark text-lg-start text-md-start text-center py-5 ">
+                  <p class="fs-2 mt-5 fw-bold" v-text="getContent('content-H61')"></p>
+                  <h1 class="display-3 lead fw-bold py-4" v-text="getContent('content-H2')"></h1>
+                  <p class="fs-4 mb-4" v-text="getContent('content-H62')"></p>
+                  <a class="btn btn-secondary btn-lg" href="https://www.facebook.com/hairsalonleephat/" role="button" target="_blank" v-text="getContent('content-H20')"></a>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                  <div class="d-flex justify-content-center align-items-center position-relative image-container mb-5">
+                      <img src="{{ url_for('static', filename='images/background/bg-5.jpg')}}" class="img-fluid rounded main-img shadow-md" alt="Main image" loading="lazy">
+                      <img src="{{ url_for('static', filename='images/avatar/Founder/avatar-4.jpg')}}" class="position-absolute small-img1 rounded-2 shadow-md" alt="Small image 1" loading="lazy">
+                      <img src="{{ url_for('static', filename='images/about-us/img-5.jpg')}}" class="position-absolute small-img2 rounded-2 shadow-md" alt="Small image 2" loading="lazy">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
     <!-- End Hero Section -->
 
     <!-- NEWS  -->
-    <div class="container-fluid bg-gray">
+    <div class="container-fluid bg-dark">
         <div class="row" style="height: 70px; line-height: 70px;">
             <div class=" overflow-hidden col d-flex justify-content-center align-items-center">
-                <h3 class="overflow-hidden fs-3 fw-bold text-dark text-center m-0 " v-text="getContent('content-H64')" ></h3>
+                <h3 class="overflow-hidden fs-3 fw-bold text-light text-center m-0 " v-text="getContent('content-H64')" ></h3>
             </div>
         </div>
     </div>
       <!-- NEW -->
-      <div class="container py-5">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card h-100">
-                <img src="{{ url_for('static', filename='images/news/new-4.jpg')}}" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h3 class="card-title"><strong>EPRES</strong></h3>
-                  <p class="card-text fw-bold" v-text="getContent('content-H65')"></p>
-                  <p class="" v-text="getContent('content-H66')"></p>
-                </div>
-                <div class="card-footer">
-                  <a href="https://www.facebook.com/hairsalonleephat" role="button" target="_blank" class="btn btn-secondary btn-m " v-text="getContent('content-H71')"></a>
-                </div>
+    <div class="container py-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100 responsive-text text-lg-start text-md-start">
+              <img src="{{ url_for('static', filename='images/news/new-4.jpg')}}" class="card-img-top" alt="Image 1" loading="lazy">
+              <div class="card-body">
+                <h3 class="card-title"><strong>EPRES</strong></h3>
+                <p class="card-text fw-bold" v-text="getContent('content-H65')"></p>
+                <p class="card-text" v-text="getContent('content-H66')"></p>
               </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                  <img src="{{ url_for('static', filename='images/news/new-1.jpg')}}"  class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h3 class="card-title"><strong>KERATIN COMPLEX</strong></h3>
-                    <p class="card-text fw-bold" v-text="getContent('content-H67')"></p>
-                    <p class="" v-text="getContent('content-H68')"></p>                 
-                  </div>
-                  <div class="card-footer">
-                    <a href="https://www.facebook.com/hairsalonleephat" role="button" target="_blank" class="btn btn-secondary btn-m " v-text="getContent('content-H71')"></a>
-                  </div>
-                </div>
-              </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="{{ url_for('static', filename='images/news/new-3.jpg')}}" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h3 class="card-title"><strong>ATS INCURE CMC</strong></h3>
-                  <p class="card-text fw-bold" v-text="getContent('content-H69')"></p>
-                  <p class="" v-text="getContent('content-H70')"></p> 
-                </div>
-                <div class="card-footer">
-                  <a href="https://www.facebook.com/hairsalonleephat" role="button" target="_blank" class="btn btn-secondary btn-m " v-text="getContent('content-H71')"></a>
-                </div>
+              <div class="card-footer">
+                <a href="https://www.facebook.com/hairsalonleephat" role="button" target="_blank" class="btn btn-secondary btn-m " v-text="getContent('content-H71')"></a>
               </div>
             </div>
           </div>
+          <div class="col">
+              <div class="card h-100 responsive-text text-lg-start text-md-start">
+                <img src="{{ url_for('static', filename='images/news/new-1.jpg')}}"  class="card-img-top" alt="Image 2" loading="lazy" >
+                <div class="card-body">
+                  <h3 class="card-title"><strong>KERATIN COMPLEX</strong></h3>
+                  <p class="card-text fw-bold" v-text="getContent('content-H67')"></p>
+                  <p class="card-text" v-text="getContent('content-H68')"></p>                 
+                </div>
+                <div class="card-footer">
+                  <a href="https://www.facebook.com/hairsalonleephat" role="button" target="_blank" class="btn btn-secondary btn-m " v-text="getContent('content-H71')"></a>
+                </div>
+              </div>
+            </div>
+          <div class="col">
+            <div class="card h-100 responsive-text text-lg-start text-md-start">
+              <img src="{{ url_for('static', filename='images/news/new-3.jpg')}}" class="card-img-top" alt="Image 3" loading="lazy">
+              <div class="card-body">
+                <h3 class="card-title"><strong>ATS INCURE CMC</strong></h3>
+                <p class="card-text fw-bold" v-text="getContent('content-H69')"></p>
+                <p class="card-text" v-text="getContent('content-H70')"></p> 
+              </div>
+              <div class="card-footer">
+                <a href="https://www.facebook.com/hairsalonleephat" role="button" target="_blank" class="btn btn-secondary btn-m " v-text="getContent('content-H71')"></a>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
     
     <!--  -->

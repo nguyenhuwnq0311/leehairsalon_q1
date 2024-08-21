@@ -319,11 +319,11 @@ body {
     color: white;
 } 
 
-img, video, p, h3, h4, h5, h6, li {
+img, video, p, h3, h4, h5, h6 {
     transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
 }
 
-img:hover, video:hover, p:hover, h3:hover, h4:hover, h5:hover, h6:hover, li:hover {
+img:hover, video:hover, p:hover, h3:hover, h4:hover, h5:hover, h6:hover {
     transform: scale(1.05);
     opacity: 0.8;
 }
