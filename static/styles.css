@@ -38,6 +38,24 @@
     font-size: 25px;
 }
 
+.social-icons {
+    display: flex;
+    align-items: center; /* Căn chỉnh theo chiều dọc */
+}
+
+.social-icons a {
+    margin-right: 20px; /* Khoảng cách giữa các biểu tượng */
+}
+
+.social-icons a:last-child {
+    margin-right: 0; /* Bỏ khoảng cách sau biểu tượng cuối cùng */
+}
+
+.social-icons svg {
+    width: 32px; /* Thiết lập chiều rộng cố định */
+    height: 32px; /* Thiết lập chiều cao cố định */
+    display: block;
+}
 
 
 body {
