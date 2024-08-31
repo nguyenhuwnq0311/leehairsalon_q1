@@ -24,7 +24,7 @@ const app = createApp({
                     'content-H6': 'CUT DESIGN',
                     'content-H7': 'With a team of hairstylists with many years of experience in the field of hair fashion, we always update the latest hair trends today, suitable for a variety of customer styles and personalities! ',
                     'content-H8': 'DYE',
-                    'content-H9': 'LEE HAIR SALON is confident that it is one of the hair salons that uses the highest quality dyeing products today (GUY TANG - TIGI - DORADO - L1ORÉAL - MILBON...) to meet quality needs. quality & health of customers hair',
+                    'content-H9': 'LEE HAIR SALON is confident that it is one of the hair salons that uses the highest quality dyeing products today (GUY TANG - TIGI - DORADO - L1ORÉAL - MILBON - GOLDWELL ...) to meet quality needs. quality & health of customers hair',
                     'content-H10': 'PERM / STRAIGHT',
                     'content-H11': 'With regularly updated hair curling/straightening techniques and personalized consultation, LEE HAIR will bring you many curling hairstyles from gentle to personalized to suit your preferences and personality. material, hair condition.',
                     'content-H12': 'AND MORE.',

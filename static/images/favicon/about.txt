@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Noto Sans Kawi
+- Font Author: Copyright 2023 The Noto Project Authors (https://github.com/notofonts/kawi)
+- Font Source: https://fonts.gstatic.com/s/notosanskawi/v3/92zBtBJLNqsg7tCciW0EPHNNh1ZgbtGWiTYDjvnK4AhmCpRyMjXVsQ.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
