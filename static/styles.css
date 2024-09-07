@@ -37,6 +37,14 @@
     font-weight: 500;
     font-size: 25px;
 }
+.font-lora {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    /* font-weight: weight;
+    font-style: normal; */
+    font-weight: 600;
+    font-style: normal;
+  }
 
 .social-icons {
     display: flex;
@@ -59,11 +67,14 @@
 
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-family: 'Lora', serif;
+    font-size: 18px;
     padding: 0 !important;
     margin: 0;
     overflow-x: hidden;
+    font-weight: 500;
+    font-style: normal;
+    
 }
 
 
@@ -220,11 +231,13 @@ padding: 5px;
     
     /* Căn chỉnh offcanvas để không gây ra khoảng trống */
     .offcanvas {
-    max-width: 100%;
+    width: 100%;
     height: 50%;
+    --bs-offcanvas-width: 100%;
+
     }
     .offcanvas-body{
-    max-width: 100%;
+    width: 100%;
     }
       
 
