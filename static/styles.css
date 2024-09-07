@@ -27,16 +27,6 @@
 
 }
 
-.font-raleway {
-    font-family: 'Raleway', monospace;
-    font-weight: 500;
-    font-size: 25px;
-}
-.font-serif {
-    font-family: 'serif';
-    font-weight: 500;
-    font-size: 25px;
-}
 .font-lora {
     font-family: "Lora", serif;
     font-optical-sizing: auto;
