@@ -40,6 +40,51 @@
 
         gtag('config', 'G-GZK817ZEEX');
       </script>
+
+
+      <!-- Structured Data cho LocalBusiness -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Lee Hair Salon",
+          "description": "Lee Hair Salon - Nơi cung cấp dịch vụ làm tóc chuyên nghiệp tại Quận 1, TP. Hồ Chí Minh.",
+          "image": "https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-6/432772064_923442763115343_9137161724427981514_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=5j_DZ6lWJiUQ7kNvgGVFoCc&_nc_ht=scontent.fsgn2-4.fna&_nc_gid=AtU0KrruqhPGJd-LKwATA9h&oh=00_AYCiXX3VWaK2UJ9Kw0ogUmmrB-Xrm-fLQVZh_3I-vjHrCA&oe=66E20465",  <!-- Đường dẫn đến hình ảnh đại diện cho salon -->
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "331 Trần Hưng Đạo, Phường Cô Giang, Quận 1",
+            "addressLocality": "TP. Hồ Chí Minh",
+            "postalCode": "700000",
+            "addressCountry": "VN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "10.7616020",   <!-- Tọa độ chính xác của địa điểm -->
+            "longitude": "106.6899612"
+          },
+          "openingHours": "Mo-Su 09:15-20:00",  <!-- Giờ mở cửa -->
+          "telephone": "+84 903 617 376",
+          "priceRange": "$$",  <!-- Phạm vi giá dịch vụ -->
+          "url": "https://maps.app.goo.gl/ogeapooYTbTC6P6AA?g_st=com.google.maps.preview.copy",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "80"
+          },
+          "potentialAction": {
+            "@type": "ReserveAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://booking.easybooking.vn/leehairsalon",
+              "inLanguage": "vn",
+              "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/MobileWebPlatform"
+              ]
+            }
+          }
+        }
+        </script>
 </head>
 <body>
     <div id="app">
