@@ -222,7 +222,7 @@ padding: 5px;
     /* Căn chỉnh offcanvas để không gây ra khoảng trống */
     .offcanvas {
     width: 100%;
-    height: 50%;
+    height: 60%;
     --bs-offcanvas-width: 100%;
 
     }
