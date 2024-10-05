@@ -5,7 +5,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
-    <a class="fs-2 fw-bold text-center navbar-brand mx-auto font-lora" href="#" v-text="getContent('navbarTitle')"></a>
+    <a class="fs-2 fw-bold text-center navbar-brand mx-auto font-lora" href="#" v-text="getContent('navbarTitle')" style="color: #333;"></a>
     <div class="me-3" @click="switchLanguage">
       <img v-if="lang === 'vi'" :src="getImage('{{ url_for('static', filename='images/logo/vn.png') }}')" alt="" width="40" height="25">
       <img v-if="lang === 'en'" :src="getImage('{{ url_for('static', filename='images/logo/en.png') }}')" alt="" width="40" height="25">

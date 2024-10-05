@@ -45,7 +45,7 @@ const app = createApp({
                     'content-H24': 'Address',
                     'content-H25':'331 Tran Hung Dao, Co Giang Ward, District 1, Ho Chi Minh City',
                     'content-H26':'PRESTIGE - QUALITY - SERVICE & AESTHETICS ARE THE CRITERIA WHICH LEE HAIR SALON PUT ON EVERYTHING',
-                    'content-H27': 'The Space & The Team',
+                    'content-H27': 'THE SPACE ',
                     'content-H28': 'SYSTEM  HAIR  STYLIST',
                     'content-H28': 'HAIR STYLIST SYSTEM',
                     'content-H29': 'The staff is carefully selected from the beginning. Training and always updating new techniques to bring customers a quality product and a great experience!',
@@ -93,6 +93,7 @@ const app = createApp({
                     'content-H71': 'SEE DETAILS →',
                     'content-H72': '"EXQUISITE BEAUTY, TOP QUALITY."',
                     'content-H73': '"CREATE LASTING BEAUTY, SHINE EVERY DAY."',
+                    'content-H74': 'THE TEAM',
 
 
 
@@ -139,7 +140,7 @@ const app = createApp({
                     'content-H24':'Địa chỉ',
                     'content-H25':'331 Trần Hưng Đạo, Phường Cô Giang, Quận 1, Thành phố Hồ Chí Minh',
                     'content-H26':'UY TÍN - CHẤT LƯỢNG - DỊCH VỤ & THẨM MỸ LÀ NHỮNG TIÊU CHÍ MÀ LEE HAIR SALON ĐẶT LÊN HÀNG ĐẦU',
-                    'content-H27': 'KHÔNG GIAN & ĐỘI NGŨ',
+                    'content-H27': 'KHÔNG GIAN',
                     'content-H28': 'HỆ  THỐNG  HAIR  STYLIST',
                     'content-H29': 'Đội ngũ nhân sự được chọn lọc kỹ càng từ đầu vào. Training và luôn cập nhập các kỹ thuật mới nhằm mang đến cho khách hàng một sản phẩm chất lượng và trải nghiệm tuyệt vời!',
                     'content-H30': 'FOUNDER/MASTER',
@@ -186,6 +187,7 @@ const app = createApp({
                     'content-H71': 'XEM CHI TIẾT →',
                     'content-H72': '"VẺ ĐẸP TINH TẾ, CHẤT LƯỢNG HÀNG ĐẦU."',
                     'content-H73': '"TẠO DỰNG VẺ ĐẸP BỀN VỮNG, TỎA SÁNG MỖI NGÀY."',
+                    'content-H74': 'ĐỘI NGŨ',
 
 
                 }

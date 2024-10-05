@@ -9,13 +9,15 @@ document.addEventListener('DOMContentLoaded', function() {
             if (element.getBoundingClientRect().top < window.innerHeight) {
                 element.style.opacity = '1';
                 element.style.transform = 'translateY(0)';
+                element.classList.add('show');
             } else {
                 element.style.opacity = '0';
                 element.style.transform = 'translateY(20px)';
+                element.classList.remove('show');
             }
         });
     }
 
     window.addEventListener('scroll', handleScroll);
-    window.dispatchEvent(new Event('scroll'));
+    window.dispatchEvent(new Event('scroll')); // Kích hoạt lần đầu khi tải trang
 });

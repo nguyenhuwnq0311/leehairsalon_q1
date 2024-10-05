@@ -4,8 +4,7 @@
 {% endblock css %}
 
 {% block html %}
-
-<div class="mt-4 mb-lg-4 mb-sm-4 mb-3">&#160;</div>
+<div class="mt-4 mb-lg-4 mb-sm-4 mb-4">&#160;</div>
 <div class="container-fluid">
     <div class="row overflow-hidden fixed-top">
         {% include 'navbar.html' %}
@@ -16,8 +15,9 @@
                 <p class="overflow-hidden fs-5 fw-bold text-light text-center mb-4 mt-4 responsive-text mx-2" v-text="getContent('content-H0')"></p>
             </div>
         </div>
-      </div>
-      <div class="container-fluid bg-gray">
+    </div>
+
+    <div class="container-fluid bg-gray">
         <div class="container">
             <div class="row hero-section responsive-text">
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12 text-dark text-lg-start text-md-start text-center py-5 ">
@@ -29,7 +29,7 @@
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="d-flex justify-content-center align-items-center position-relative image-container mb-5">
-                        <img src="{{ url_for('static', filename='images/background/bg-15.jpg')}}" class="img-fluid rounded main-img shadow-md" alt="Main image">
+                        <img src="{{ url_for('static', filename='images/background/bg-15.jpg')}}" class="img-fluid rounded main-img-1 shadow-md" alt="Main image">
                         <img src="{{ url_for('static', filename='images/avatar/Founder/avatar-2.jpg')}}" class="position-absolute small-img1 rounded-2 shadow-md" alt="Small image 1">
                         <img src="{{ url_for('static', filename='images/about-us/img-6.jpg')}}" class="position-absolute small-img2 rounded-2 shadow-md" alt="Small image 2">
                     </div>

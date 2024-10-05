@@ -27,15 +27,6 @@
 
 }
 
-.font-lora {
-    font-family: "Lora", serif;
-    font-optical-sizing: auto;
-    /* font-weight: weight;
-    font-style: normal; */
-    font-weight: 600;
-    font-style: normal;
-  }
-
 .social-icons {
     display: flex;
     align-items: center; /* Căn chỉnh theo chiều dọc */
@@ -56,6 +47,8 @@
 }
 
 
+/* =================================FONT======================================== */
+
 body {
     font-family: 'Lora', serif;
     font-size: 18px;
@@ -64,9 +57,24 @@ body {
     overflow-x: hidden;
     font-weight: 500;
     font-style: normal;
-    
-}
+    }
 
+.font-lora {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    /* font-weight: weight;
+    font-style: normal; */
+    font-weight: 600;
+    font-style: normal;
+    }
+
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    }
+    
 
 .container-fluid {
     margin-right: 0;
@@ -104,6 +112,7 @@ body {
     width: 300px;
 }
 
+/* ============================IMAGE================================== */
 .image-container {
     position: relative;
     width: 100%;
@@ -123,6 +132,33 @@ body {
     z-index: 0;
     margin-top: 20px;
 }
+.image-container .main-img-1  {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+    transform: translate(100%, 0%); /* Vị trí gốc */
+    z-index: 0;
+    margin-top: 0;
+    opacity: 0; /* Bắt đầu ở trạng thái mờ */
+    /*transition: opacity 2s ease-in-out; /* Hiệu ứng mờ đến rõ dần trong 2 giây */
+}
+.image-container .main-img-2  {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+    transform: translate(-100%, 0%); /* Vị trí gốc */
+    z-index: 0;
+    margin-top: 0;
+    opacity: 0; /* Bắt đầu ở trạng thái mờ */
+    /* transition: opacity 2s ease-in-out; /* Hiệu ứng mờ đến rõ dần trong 2 giây */
+}
+
+.image-container .main-img.show .main-img-1.show .main-img-2.show .small-img1.show .small-img2.show {
+    opacity: 5; /* Rõ dần */
+}
+
 
 .small-img1 {
     position: absolute;
@@ -133,17 +169,19 @@ body {
     height: auto;
     border-radius: 0.5rem;
     z-index: 1;  /* Đảm bảo ảnh nhỏ nằm trên ảnh lớn */
+    opacity: 0;
 }
 
 .small-img2 {
     position: absolute;
     bottom: -3%;
     left: -35%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, 0%);
     width: 75%;
-    height: 30%;
-    border-radius: 0.5rem;
+    height: auto;
+    border-radius: 0;
     z-index: 1;  /* Đảm bảo ảnh nhỏ nằm trên ảnh lớn */
+    opacity: 0;
 }
 
 .position-relative {
@@ -166,7 +204,7 @@ body {
 
 .signature-img {
     position: absolute;
-    bottom: -30px; /* Điều chỉnh khoảng cách từ đáy ảnh */
+    bottom: -50px; /* Điều chỉnh khoảng cách từ đáy ảnh */
     right: 0;
 }
 
@@ -202,6 +240,19 @@ padding: 5px;
     height: 80%;
 
 }
+
+.carousel-item {
+    transition: transform 0.5s ease-in-out; /* Chuyển động mượt */
+    transform: translateX(0); /* Vị trí mặc định */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* ====================================PHONE==================================== */
 @media (max-width: 768px) {
     body {
     overflow-x: hidden;
@@ -213,12 +264,37 @@ padding: 5px;
     z-index: -1;
     }
     
+    .image-container .main-img-1{
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: auto;
+        transform: translate(100%, 0%); /* Vị trí gốc */
+        z-index: 0;
+        margin-top: 0;
+        opacity: 0; /* Bắt đầu ở trạng thái mờ */
+        /*transition: opacity 2s ease-in-out; /* Hiệu ứng mờ đến rõ dần trong 2 giây */
+    }
+    .image-container .main-img-2 {
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: auto;
+        transform: translate(-100%, 0%); /* Vị trí gốc */
+        z-index: 0;
+        margin-top: 0;
+        opacity: 0; /* Bắt đầu ở trạng thái mờ */
+        /*transition: opacity 2s ease-in-out; /* Hiệu ứng mờ đến rõ dần trong 2 giây */
+    }
+
     /* Đảm bảo navbar không gây ra khoảng trống */
     .navbar {
     width: 100%;
-
     }
-    
+
+    .carousel-item img {
+        width: 200%; /* Đặt kích thước lớn hơn cho mobile */
+    }
     /* Căn chỉnh offcanvas để không gây ra khoảng trống */
     .offcanvas {
     width: 100%;
@@ -259,6 +335,7 @@ padding: 5px;
     .custom-img-size-1 {
         max-width: 100%; 
         height: auto;
+        position: relative;
     }
 
     .responsive-text {
@@ -281,14 +358,11 @@ padding: 5px;
         align-items: center;
     }
 
-
-    
-    
-
 }
 
-/* Loại bỏ overflow: hidden; trên tất cả các phần tử */
 
+
+/* ============================================TRANSTATION======================================= */
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -340,12 +414,21 @@ body {
     color: white;
 } 
 
-img, video, p, h3, h4, h5, h6 {
-    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
-}
+img, video, p, h3, h4, h5, h6{
+    transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+    }
 
-img:hover, video:hover, p:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+img:hover, video:hover, p:hover, h3:hover, h4:hover, h5:hover, h6:hover{
     transform: scale(1.05);
     opacity: 0.8;
 }
 
+.btn  {
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* =====================END============================ */
