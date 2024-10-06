@@ -4,11 +4,13 @@
 {% endblock css %}
 
 {% block html %}
-<div class="mt-4 mb-lg-4 mb-sm-4 mb-4">&#160;</div>
+<div class="mt-4 mb-lg-4 mb-sm-5 mb-3">&#160;</div>
 <div class="container-fluid">
     <div class="row overflow-hidden fixed-top">
         {% include 'navbar.html' %}
     </div>
+    
+    <!--  -->
     <div class="container-fluid bg-dark text-center ">
         <div class="row  position-relative" >
             <div class="overflow-hidden">
@@ -17,15 +19,18 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-gray">
+    <!--  -->
+    <div class="container-fluid bg-light">
         <div class="container">
             <div class="row hero-section responsive-text">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12 text-dark text-lg-start text-md-start text-center py-5 ">
-                    <p class="fs-2 mt-5 fw-bold" v-text="getContent('content-H1')"></p>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12  text-dark text-lg-start text-md-start text-center mt-5 ">
+                    <p class="fs-2 mt-4 fw-bold" v-text="getContent('content-H1')"></p>
                     <p class="display-4 lead fw-bold py-4" v-text="getContent('content-H2')"></p>
-                    <p class="fs-4 mb-5" v-text="getContent('content-H3')"></p>
-                    <p class="fs-5 mb-5" v-text="getContent('content-H4')"></p>
-                    <a class="btn btn-secondary btn-lg" href="https://booking.easysalon.vn/leehairsalonq1" role="button" target="_blank" v-text="getContent('content-H20')"></a>
+                    <p class="fs-4 mb-4" v-text="getContent('content-H3')"></p>
+                    <p class="fs-5 mb-4" v-text="getContent('content-H4')"></p>
+                    <div class="d-grid col-6 mx-auto mx-md-0">
+                        <a class="btn btn-outline-primary btn-lg" type="button" href="https://booking.easysalon.vn/leehairsalonq1" role="button" target="_blank" v-text="getContent('content-H20')"></a>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="d-flex justify-content-center align-items-center position-relative image-container mb-5">
@@ -37,7 +42,10 @@
             </div>
         </div>
     </div>
-    <!-- <div class="row position-relative">
+    <!--  -->
+
+    <!-- Phần ảnh Background chìm - chữ nổi
+    <div class="row position-relative">
         <img class="d-flex img"  :src="getImage('{{ url_for('static', filename='images/background/bg-1.jpg')}}')" alt="Background Image" loading="lazy">
         <div class="position-absolute top-50 start-50 translate-middle w-100 text-center">
             <div class="d-flex justify-content-center">
@@ -53,7 +61,8 @@
                 <p class="overflow-hidden text-white fs-3" v-text="getContent('content-H4')"></p>
             </div>
         </div>
-    </div>     -->
+    </div> -->
+
     <!-- Hung update -->
     <div class="container-fluid bg-dark">
         <div class="row" style="height: 70px; line-height: 70px;">
@@ -86,6 +95,8 @@
             </div>
         </div>
     </div>
+
+    <!--  -->
     <div class="container-fluid bg-dark mt-5 ">
         <div class="container d-flex justify-content-center">
             <div class="w-100" style="max-width: 90%;">
@@ -100,7 +111,9 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-gray ">
+
+    <!--  -->
+    <div class="container-fluid bg-light ">
         <div class="container d-flex justify-content-center">
             <div class="w-100" style="max-width: 95%;">
                 <!-- Phần trên: Hình ảnh bên trái, nội dung bên phải -->
@@ -163,6 +176,7 @@
             </div>
         </div>
     </div>
+
     <!-- @LEE.HAIR -->
     <div class="container-fluid text-center">
         <div class="row position-relative mt-5" >
@@ -209,14 +223,14 @@
             </div>
         </div>     
     </div>
-    <!-- Hung Update -->
+
+
     <!-- Các thương hiệu  -->
     <div class="row bg-dark mt-5" style="height: 70px; line-height: 70px;">
         <div class=" overflow-hidden col d-flex justify-content-center align-items-center">
             <p class="overflow-hidden fs-3 fw-bold text-white text-center m-0" v-text="getContent('content-H59')"></p>
         </div>
     </div>
-        
     <div class="container">
         <div class="row row-cols-3 row-cols-md-5 g-2 mt-5 mb-5">
             <div class="col-4 col-md ">
@@ -254,7 +268,7 @@
   
     <!--  -->
     <div class="container-fluid text-center">
-        <div class="row bg-light position-relative" >
+        <div class="row bg-gray position-relative" >
             <div class="overflow-hidden">
                 <p class="overflow-hidden fs-5 fw-bold text-dark text-center mb-3 mt-3 mx-1 " v-text="getContent('content-H56')"></p>
             </div>

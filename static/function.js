@@ -17,6 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Tạo hiệu ứng cuộn mượt mà
+        });
+    }
 
     window.addEventListener('scroll', handleScroll);
     window.dispatchEvent(new Event('scroll')); // Kích hoạt lần đầu khi tải trang

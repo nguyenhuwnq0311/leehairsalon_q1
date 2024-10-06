@@ -184,7 +184,7 @@ const app = createApp({
                     'content-H68': 'Keratin Complex là dòng sản phẩm phục hồi tóc chuyên nghiệp đã tạo dấu ấn mạnh mẽ trên thị trường quốc tế trong suốt 20 năm qua. Sản phẩm này được Lee Hair Salon lựa chọn để mang lại giải pháp hoàn hảo cho những mái tóc bị hư tổn, đảm bảo tóc bạn luôn trong tình trạng tốt nhất.',
                     'content-H69': 'THƯƠNG HIỆU MỸ PHẨM TÓC TOP 1 TẠI MỸ',
                     'content-H70': 'Tái sinh tất cả các liên kết tự nhiên, chữa trị mọi hư tổn một cách toàn diện từ trong ra ngoài với công nghệ siêu phân tử tiên tiến nhất thế giới nay đã có mặt tại LEE HAIR SALON',
-                    'content-H71': 'XEM CHI TIẾT →',
+                    'content-H71': 'CHI TIẾT TẠI →',
                     'content-H72': '"VẺ ĐẸP TINH TẾ, CHẤT LƯỢNG HÀNG ĐẦU."',
                     'content-H73': '"TẠO DỰNG VẺ ĐẸP BỀN VỮNG, TỎA SÁNG MỖI NGÀY."',
                     'content-H74': 'ĐỘI NGŨ',

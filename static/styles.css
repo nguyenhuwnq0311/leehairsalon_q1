@@ -23,7 +23,7 @@
 
 .menu-bg {
     background-image: url('./images/background/bg-14.jpg');
-    padding: 14px;
+    padding: 10px;
 
 }
 
@@ -242,7 +242,7 @@ padding: 5px;
 }
 
 .carousel-item {
-    transition: transform 0.5s ease-in-out; /* Chuyển động mượt */
+    transition: transform 0.4s ease-in-out; /* Chuyển động mượt */
     transform: translateX(0); /* Vị trí mặc định */
 }
 
@@ -261,6 +261,61 @@ padding: 5px;
 .custom-offcanvas-animation.show {
     transform: translateX(0); /* Slide in from the left */
     opacity: 1; /* Fade in */
+}
+
+
+/* ========================================BUTTON FOOTER PAGE=================================== */
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 9999;
+}
+
+.floating-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #00ccff00;
+    color: rgba(255, 255, 255, 0);
+    font-size: 24px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.floating-buttons a:hover {
+    background-color: #00ccff00;
+    transform: scale(1.1);
+}
+
+.floating-buttons a i {
+    animation: bounce 1s infinite;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.icon-img {
+    width: 100%; /* Đảm bảo hình ảnh co giãn theo kích thước nút */
+    height: 100%;
+    object-fit: cover; /* Đảm bảo hình ảnh vừa với khung tròn của nút */
+    border-radius: 50%; /* Giữ cho hình ảnh tròn theo khung của nút */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
 }
 
 
@@ -316,6 +371,8 @@ padding: 5px;
     }
     .offcanvas-body{
     width: 100%;
+    padding: 0px;
+    padding-left: 20px;
     }
       
 
@@ -370,7 +427,16 @@ padding: 5px;
         align-items: center;
     }
 
-    
+    .floating-buttons {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .floating-buttons a {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
 }
 
 
@@ -427,13 +493,20 @@ body {
     color: white;
 } 
 
-img, video, p, h3, h4, h5, h6{
+img, video, p, h3, h4, h5, h6 {
+    opacity: 0;
+    transform: translateY(20px);
     transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
-    }
+}
 
 img:hover, video:hover, p:hover, h3:hover, h4:hover, h5:hover, h6:hover{
     transform: scale(1.05);
     opacity: 0.8;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .btn  {
@@ -443,5 +516,6 @@ img:hover, video:hover, p:hover, h3:hover, h4:hover, h5:hover, h6:hover{
 .btn:hover {
     transform: scale(1.1);
 }
+
 
 /* =====================END============================ */
