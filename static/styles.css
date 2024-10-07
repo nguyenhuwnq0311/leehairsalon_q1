@@ -265,61 +265,6 @@ padding: 5px;
 }
 
 
-/* ========================================BUTTON FOOTER PAGE=================================== */
-.floating-buttons {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    z-index: 9999;
-}
-
-.floating-buttons a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #00ccff00;
-    color: rgba(255, 255, 255, 0);
-    font-size: 24px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0);
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.floating-buttons a:hover {
-    background-color: #00ccff00;
-    transform: scale(1.1);
-}
-
-.floating-buttons a i {
-    animation: bounce 1s infinite;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.icon-img {
-    width: 100%; /* Đảm bảo hình ảnh co giãn theo kích thước nút */
-    height: 100%;
-    object-fit: cover; /* Đảm bảo hình ảnh vừa với khung tròn của nút */
-    border-radius: 50%; /* Giữ cho hình ảnh tròn theo khung của nút */
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
-}
-
-
 /* ====================================PHONE==================================== */
 @media (max-width: 768px) {
     body {
