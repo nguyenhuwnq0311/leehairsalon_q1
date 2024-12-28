@@ -48,9 +48,6 @@
 
 
 /* =================================FONT======================================== */
-.text-red {
-    color: rgb(163, 11, 11);
-}
 
 body {
     font-family: 'Lora', serif;
@@ -78,7 +75,11 @@ body {
     font-weight: 600;
     font-style: normal;
     }
-    
+
+/* Đảm bảo biểu tượng và văn bản nhỏ gọn */
+.bi {
+    vertical-align: middle;
+  }    
 
 .container-fluid {
     margin-right: 0;
@@ -116,6 +117,9 @@ body {
     width: 300px;
 }
 
+.text-red{
+    color: rgb(183, 6, 6);
+}
 /* ============================IMAGE================================== */
 .image-container {
     position: relative;
@@ -388,6 +392,10 @@ padding: 5px;
         height: 50px;
         font-size: 20px;
     }
+
+    .small {
+        font-size: 12px;
+      }
 }
 
 

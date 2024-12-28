@@ -196,6 +196,8 @@ const app = createApp({
                     'content-H80': 'THỜI GIAN THỰC HIỆN CÁC DỊCH VỤ',
                     'content-H81': 'KHI NÀO BẠN NÊN LÀM TÓC ĂN TẾT?',
                     'content-H82': 'Năm mới, diện mạo mới! Chúc bạn luôn tự tin và tỏa sáng!',
+                    'content-H83':'0903617376',
+                    'content-H84':'0908679635',
                 }
             }
         }
