@@ -13,7 +13,7 @@ const app = createApp({
                     'price': 'Price',
                     'policy': 'Policy',
                     'news': 'News',
-                    'navbarTitle': 'LEE HAIR SALON™',
+                    'navbarTitle': 'LEE HAIR SALON',
                     'Menu': 'Menu',
                     'content-H0':'PRESTIGE - QUALITY - SERVICE & AESTHETICS ARE THE TOP PRIORITIES THAT LEE HAIR SALON PUTS ON TOP',
                     'content-H1': 'OUR STUDIO',
@@ -98,7 +98,7 @@ const app = createApp({
 
 
 
-
+                    
                 },
                 'vi': {
                     'home': 'Trang Chủ',
@@ -108,7 +108,7 @@ const app = createApp({
                     'price': 'Bảng Giá Dịch Vụ',
                     'policy': 'Chính Sách Bảo Hành',
                     'news': 'Tin Tức',
-                    'navbarTitle': 'LEE HAIR SALON™',
+                    'navbarTitle': 'LEE HAIR SALON',
                     'Menu': 'Menu',
                     'content-H0':'UY TÍN - CHẤT LƯỢNG - DỊCH VỤ & THẨM MỸ LÀ NHỮNG TIÊU CHÍ MÀ LEE HAIR SALON ĐẶT LÊN HÀNG ĐẦU',
                     'content-H1': 'CHÀO MỪNG BẠN ĐẾN VỚI',
@@ -177,7 +177,7 @@ const app = createApp({
                     'content-H61': 'KHÁM PHÁ PHONG CÁCH CỦA RIÊNG BẠN',
                     'content-H62': 'Cập nhật các tin tức mới nhất tại trang chủ của chúng tôi.',
                     'content-H63': 'Theo dõi ngay',
-                    'content-H64': 'TIN TỨC',
+                    'content-H64': 'CÁC SẢN PHẨM TIN DÙNG',
                     'content-H65': 'CÔNG NGHỆ MANG TÍNH KHOA HỌC VÀ ĐỘT PHÁ NGÀNH TÓC',
                     'content-H66': 'Một bước đột phá mới cho ngành tóc của tiến sĩ Eric Pressly hứa hẹn sẽ mang đến cho khách hàng Việt Nam một sản phẩm chữa trị hàn gắn liên kết tóc được khoa học chứng minh, chỉ trong một bước liệu trình, thuần chay và hiệu quả tức thì ngay từ lần đầu sử dụng.',
                     'content-H67': 'PHỤC HỒI TÓC CHUYÊN NGHIỆP',
@@ -188,8 +188,14 @@ const app = createApp({
                     'content-H72': '"VẺ ĐẸP TINH TẾ, CHẤT LƯỢNG HÀNG ĐẦU."',
                     'content-H73': '"TẠO DỰNG VẺ ĐẸP BỀN VỮNG, TỎA SÁNG MỖI NGÀY."',
                     'content-H74': 'ĐỘI NGŨ',
-
-
+                    'content-H75': 'THÔNG BÁO HOẠT ĐỘNG TẾT',
+                    'content-H76': 'Chi tiết hoạt động Tết',
+                    'content-H77': 'LỊCH HOẠT ĐỘNG - LƯU Ý ĐẶT HẸN/ ĐẶT CỌC - TƯ VẤN DỊCH VỤ',
+                    'content-H78': '━━━━━━━━━━━━',
+                    'content-H79': 'NHỮNG LƯU Ý TRONG MÙA TẾT NGUYÊN ĐÁN',
+                    'content-H80': 'THỜI GIAN THỰC HIỆN CÁC DỊCH VỤ',
+                    'content-H81': 'KHI NÀO BẠN NÊN LÀM TÓC ĂN TẾT?',
+                    'content-H82': 'Năm mới, diện mạo mới! Chúc bạn luôn tự tin và tỏa sáng!',
                 }
             }
         }

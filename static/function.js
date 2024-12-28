@@ -18,5 +18,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     window.addEventListener('scroll', handleScroll);
-    window.dispatchEvent(new Event('scroll')); // Kích hoạt lần đầu khi tải trang
+    window.dispatchEvent(new Event('scroll')); 
 });

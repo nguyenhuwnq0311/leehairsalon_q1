@@ -10,16 +10,15 @@
         {% include 'navbar.html' %}
     </div>
 
-    <!--  -->
+    <!-- Welcome -->
     <div class="container-fluid bg-dark text-center ">
-        <div class="row  position-relative" >
+        <div class="row position-relative" >
             <div class="overflow-hidden">
-                <p class="overflow-hidden fs-5 fw-bold text-light text-center mb-4 mt-4 responsive-text mx-2" v-text="getContent('content-H0')"></p>
+                <p class="overflow-hidden fs-4 fw-bold text-light text-center mb-4 mt-4 responsive-text mx-2" v-text="getContent('content-H0')"></p>
             </div>
         </div>
     </div>
 
-    <!--  -->
     <div class="container-fluid bg-light">
         <div class="container">
             <div class="row hero-section responsive-text">
@@ -44,6 +43,33 @@
     </div>
     <!--  -->
 
+    <!-- Event -->
+    <div class="container-fluid bg-dark text-center ">
+        <div class="row  position-relative" >
+            <div class="overflow-hidden">
+                <p class="overflow-hidden fs-3 fw-bold text-light text-center mb-4 mt-4 responsive-text mx-2" v-text="getContent('content-H75')"></p>   
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 d-flex justify-content-center mt-5 mb-5">
+                <img class="img-fluid rounded-2" :src="getImage('{{ url_for('static', filename='images/notification/tet_holiday/img1.jpg')}}')" alt="Background Image">
+            </div>
+            <div class="d-flex justify-content-center">
+                <a :href="getImage('https://www.leehairsalon-q1.com/tin-tuc')" 
+                   class="btn btn-danger justify-content-center btn-lg" 
+                   tabindex="-1" 
+                   role="button" 
+                   target="_blank" 
+                   v-text="getContent('content-H76')">
+                </a>
+            </div>   
+            <p class="overflow-hidden responsive-text mx-2 fs-4 text-center mt-5 mb-5 fw-bold text-red" v-text="getContent('content-H77')"></p>
+        </div>
+    </div>
+
     <!-- Phần ảnh Background chìm - chữ nổi
     <div class="row position-relative">
         <img class="d-flex img"  :src="getImage('{{ url_for('static', filename='images/background/bg-1.jpg')}}')" alt="Background Image" loading="lazy">
@@ -63,7 +89,7 @@
         </div>
     </div> -->
 
-    <!-- Hung update -->
+    <!-- Services our-->
     <div class="container-fluid bg-dark">
         <div class="row" style="height: 70px; line-height: 70px;">
             <div class=" overflow-hidden col d-flex justify-content-center align-items-center">
@@ -72,7 +98,7 @@
         </div>
     </div>
     
-    <!-- Cắt thiết kế -->
+    <!-- Cut -->
     <div class="row position-relative mt-5" >
         <div class="overflow-hidden col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">
             <p class="overflow-hidden fs-3 fw-bold text-dark text-center " v-text="getContent('content-H6')"></p>
@@ -96,7 +122,7 @@
         </div>
     </div>
 
-    <!--  -->
+    <!-- quotes -->
     <div class="container-fluid bg-dark mt-5 ">
         <div class="container d-flex justify-content-center">
             <div class="w-100" style="max-width: 90%;">
@@ -112,11 +138,10 @@
         </div>
     </div>
 
-    <!--  -->
+    <!-- img left, content right -->
     <div class="container-fluid bg-light ">
         <div class="container d-flex justify-content-center">
             <div class="w-100" style="max-width: 95%;">
-                <!-- Phần trên: Hình ảnh bên trái, nội dung bên phải -->
                 <div class="row mb-5 mt-5">
                     <div class="col-md-6 order-1 order-md-2 d-flex align-items-center">
                         <div>
@@ -140,7 +165,7 @@
                     </div>
                 </div>
     
-                <!-- Phần dưới: Nội dung bên trái, hình ảnh bên phải -->
+                <!-- img right, content left -->
                 <div class="row flex-row-reverse ">
                     <div class="col-md-6 order-2 order-md-1 d-flex flex-wrap">
                         <div class="col-6 ">
@@ -225,7 +250,7 @@
     </div>
 
 
-    <!-- Các thương hiệu  -->
+    <!-- Brand  -->
     <div class="row bg-dark mt-5" style="height: 70px; line-height: 70px;">
         <div class=" overflow-hidden col d-flex justify-content-center align-items-center">
             <p class="overflow-hidden fs-3 fw-bold text-white text-center m-0" v-text="getContent('content-H59')"></p>
@@ -266,7 +291,7 @@
         </div>
     </div>   
   
-    <!--  -->
+    <!-- quotes -->
     <div class="container-fluid text-center">
         <div class="row bg-gray position-relative" >
             <div class="overflow-hidden">
@@ -276,7 +301,7 @@
     </div>
     
 
-    <!-- Phần cuối  -->
+    <!-- footer  -->
     {% include 'footer.html' %}
 </div> 
     
