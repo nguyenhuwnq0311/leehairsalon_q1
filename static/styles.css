@@ -23,7 +23,7 @@
 
 .menu-bg {
     background-image: url('./images/background/bg-14.jpg');
-    padding: 11px;
+    padding: 9px;
 
 }
 
@@ -51,7 +51,7 @@
 
 body {
     font-family: 'Lora', serif;
-    /* font-size: 18px; */
+    font-size: 18px;
     padding: 0 !important;
     margin: 0;
     overflow-x: hidden;
@@ -120,6 +120,11 @@ body {
 .text-red{
     color: rgb(183, 6, 6);
 }
+.small {
+    font-size: 12px; /* Kích thước văn bản nhỏ hơn */
+    line-height: 1.2; /* Chiều cao dòng gọn hơn */
+  }
+  
 /* ============================IMAGE================================== */
 .image-container {
     position: relative;
@@ -394,8 +399,13 @@ padding: 5px;
     }
 
     .small {
-        font-size: 12px;
+        font-size: 10px;
       }
+      .small {
+        font-size: 12px; /* Kích thước văn bản nhỏ hơn */
+        line-height: 1.2; /* Chiều cao dòng gọn hơn */
+      }
+      
 }
 
 
