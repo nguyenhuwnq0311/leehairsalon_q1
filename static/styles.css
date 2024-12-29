@@ -23,7 +23,7 @@
 
 .menu-bg {
     background-image: url('./images/background/bg-14.jpg');
-    padding: 10px;
+    padding: 11px;
 
 }
 
@@ -51,7 +51,7 @@
 
 body {
     font-family: 'Lora', serif;
-    font-size: 18px;
+    /* font-size: 18px; */
     padding: 0 !important;
     margin: 0;
     overflow-x: hidden;
@@ -143,8 +143,8 @@ body {
 .image-container .main-img-1  {
     position: relative;
     top: 0;
-    width: 100%;
-    height: auto;
+    width: 80%;
+    height: 80%;
     transform: translate(100%, 0%); /* Vị trí gốc */
     z-index: 0;
     margin-top: 0;
@@ -173,7 +173,7 @@ body {
     top: 15%;
     right: -5%;
     transform: translate(0%, -70%);
-    width: 35%;
+    width: 30%;
     height: auto;
     border-radius: 0.5rem;
     z-index: 1;  /* Đảm bảo ảnh nhỏ nằm trên ảnh lớn */
@@ -182,11 +182,11 @@ body {
 
 .small-img2 {
     position: absolute;
-    bottom: -3%;
+    bottom: 0%;
     left: -35%;
     transform: translate(-50%, 0%);
-    width: 75%;
-    height: auto;
+    width: 60%;
+    height: 30%;
     border-radius: 0;
     z-index: 1;  /* Đảm bảo ảnh nhỏ nằm trên ảnh lớn */
     opacity: 0;

@@ -4,7 +4,7 @@
 {% endblock css %}
 
 {% block html %}
-<div class="mt-5 mb-lg-4 mb-sm-5 mb-3">&#160;</div>
+<div class="mt-5 mb-lg-4 mb-sm-4 mb-5 py-1">&#160;</div>
 <div class="container-fluid ">
     <div class="row overflow-hidden fixed-top">
         {% include 'navbar.html' %}
@@ -14,7 +14,7 @@
     <div class="container-fluid bg-dark text-center ">
         <div class="row position-relative" >
             <div class="overflow-hidden">
-                <p class="overflow-hidden fs-4 fw-bold text-light text-center mb-4 mt-4 responsive-text mx-2" v-text="getContent('content-H0')"></p>
+                <p class="overflow-hidden fs-5 fw-bold text-light text-center mt-2 mb-2 responsive-text mx-2" v-text="getContent('content-H0')"></p>
             </div>
         </div>
     </div>
@@ -22,18 +22,18 @@
     <div class="container-fluid bg-light">
         <div class="container">
             <div class="row hero-section responsive-text">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12  text-dark text-lg-start text-md-start text-center mt-5 ">
-                    <p class="fs-2 mt-4 fw-bold" v-text="getContent('content-H1')"></p>
-                    <p class="display-4 lead fw-bold py-4" v-text="getContent('content-H2')"></p>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 text-dark text-lg-start text-md-start text-center mt-4 ">
+                    <p class="fs-4 mt-4 fw-bold" v-text="getContent('content-H1')"></p>
+                    <p class="display-5 lead fw-bold py-3" v-text="getContent('content-H2')"></p>
                     <p class="fs-4 mb-4" v-text="getContent('content-H3')"></p>
                     <p class="fs-5 mb-4" v-text="getContent('content-H4')"></p>
                     <div class="d-grid col-6 mx-auto mx-md-0">
-                        <a class="btn btn-outline-primary btn-lg" type="button" href="https://booking.easysalon.vn/leehairsalonq1" role="button" target="_blank" v-text="getContent('content-H20')"></a>
+                        <a class="btn btn-outline-primary" type="button" href="https://booking.easysalon.vn/leehairsalonq1" role="button" target="_blank" v-text="getContent('content-H20')"></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="d-flex justify-content-center align-items-center position-relative image-container mb-5">
-                        <img src="{{ url_for('static', filename='images/background/bg-15.jpg')}}" class="img-fluid rounded main-img-1 shadow-md" alt="Main image">
+                    <div class="d-flex justify-content-center align-items-center position-relative image-container mb-4">
+                        <img src="{{ url_for('static', filename='images/background/bg-15.jpg')}}" class=" rounded main-img-1 shadow-md" alt="Main image">
                         <img src="{{ url_for('static', filename='images/avatar/Founder/avatar-2.jpg')}}" class="position-absolute small-img1 rounded-2 shadow-md" alt="Small image 1">
                         <img src="{{ url_for('static', filename='images/about-us/img-6.jpg')}}" class="position-absolute small-img2 rounded-2 shadow-md" alt="Small image 2">
                     </div>
@@ -47,14 +47,14 @@
     <div class="container-fluid bg-dark text-center ">
         <div class="row  position-relative" >
             <div class="overflow-hidden">
-                <p class="overflow-hidden fs-3 fw-bold text-light text-center mb-4 mt-4 responsive-text mx-2" v-text="getContent('content-H75')"></p>   
+                <p class="overflow-hidden fs-5 fw-bold text-light text-center mt-2 mb-2 responsive-text mx-2" v-text="getContent('content-H75')"></p>   
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-10 d-flex justify-content-center mt-5 mb-5">
+            <div class="col-md-10 d-flex justify-content-center mt-4 mb-4">
                 <img class="img-fluid rounded-2" :src="getImage('{{ url_for('static', filename='images/notification/tet_holiday/img1.jpg')}}')" alt="Background Image">
             </div>
             <div class="d-flex justify-content-center">
@@ -66,7 +66,7 @@
                    v-text="getContent('content-H76')">
                 </a>
             </div>   
-            <p class="overflow-hidden responsive-text mx-2 fs-4 text-center mt-5 mb-5 fw-bold text-red" v-text="getContent('content-H77')"></p>
+            <p class="overflow-hidden fs-5 responsive-text mx-2 text-center mt-4 mb-4 fw-bold text-red" v-text="getContent('content-H77')"></p>
         </div>
     </div>
 
@@ -90,18 +90,19 @@
     </div> -->
 
     <!-- Services our-->
-    <div class="container-fluid bg-dark">
-        <div class="row" style="height: 70px; line-height: 70px;">
-            <div class=" overflow-hidden col d-flex justify-content-center align-items-center">
-                <p class="overflow-hidden fs-3 fw-bold text-white text-center m-0 " v-text="getContent('content-H5')"></p>
+    <div class="container-fluid bg-dark text-center ">
+        <div class="row position-relative" >
+            <div class="overflow-hidden">
+                <p class="overflow-hidden fs-5 fw-bold text-light text-center mt-2 mb-2 responsive-text mx-2" v-text="getContent('content-H5')"></p>
             </div>
         </div>
     </div>
+
     
     <!-- Cut -->
-    <div class="row position-relative mt-5" >
+    <div class="row position-relative mt-4" >
         <div class="overflow-hidden col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">
-            <p class="overflow-hidden fs-3 fw-bold text-dark text-center " v-text="getContent('content-H6')"></p>
+            <p class="overflow-hidden fs-4 fw-bold text-dark text-center " v-text="getContent('content-H6')"></p>
             <p class="overflow-hidden text-dark col-sm-6 text-center col-lg-6 col-md-6 mx-3" v-text="getContent('content-H7')"></p>
         </div>
     </div>
@@ -123,14 +124,14 @@
     </div>
 
     <!-- quotes -->
-    <div class="container-fluid bg-dark mt-5 ">
+    <div class="container-fluid bg-gray mt-4 ">
         <div class="container d-flex justify-content-center">
             <div class="w-100" style="max-width: 90%;">
             <figure class="text-center">
                 <blockquote class="blockquote mt-3">
-                    <p class="text-center text-white " v-text="getContent('content-H46')"></p>
+                    <p class="text-center text-dark " v-text="getContent('content-H46')"></p>
                 </blockquote>
-                <figcaption class="blockquote-footer ">
+                <figcaption class="blockquote-footer  ">
                     <cite title="Source Title" v-text="getContent('content-H47')" ></cite>
                 </figcaption>
               </figure>
@@ -142,10 +143,10 @@
     <div class="container-fluid bg-light ">
         <div class="container d-flex justify-content-center">
             <div class="w-100" style="max-width: 95%;">
-                <div class="row mb-5 mt-5">
+                <div class="row mb-5 mt-4">
                     <div class="col-md-6 order-1 order-md-2 d-flex align-items-center">
                         <div>
-                            <p class="overflow-hidden fs-3 fw-bold text-dark text-center" v-text="getContent('content-H8')"></p>
+                            <p class="overflow-hidden fs-4 fw-bold text-dark text-center" v-text="getContent('content-H8')"></p>
                             <p class="overflow-hidden text-dark mt-3 text-center" v-text="getContent('content-H9')"></p>
                         </div>
                     </div>
@@ -183,35 +184,39 @@
                     </div>
                     <div class="col-md-6 order-1 order-md-2 d-flex align-items-center mt-3">
                         <div>
-                            <p class="overflow-hidden fs-3 fw-bold text-dark text-center " v-text="getContent('content-H10')"></p>
+                            <p class="overflow-hidden fs-4 fw-bold text-dark text-center " v-text="getContent('content-H10')"></p>
                             <p class="overflow-hidden text-dark mt-3 text-center" v-text="getContent('content-H11')"></p>
                         </div>
                     </div>
                     <div class=" row order-2 order-md-2 align-items-center">
                         <div>
-                            <p class="overflow-hidden fs-3 text-center text-dark mt-5" v-text="getContent('content-H12')"></p>
+                            <p class="overflow-hidden fs-5 text-center text-dark mt-4 mb-2 fw-bold" v-text="getContent('content-H12')"></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row bg-dark mt-5 " style="height: 70px; line-height: 70px;">
-            <div class="col d-flex justify-content-center align-items-center">
-                <p class="overflow-hidden fs-3 fw-bold text-white text-center m-0" v-text="getContent('content-H13')"></p>
+    </div>
+
+    <!-- Follow IG-->
+    <div class="container-fluid bg-dark text-center mt-3 ">
+        <div class="row position-relative" >
+            <div class="overflow-hidden">
+                <p class="overflow-hidden fs-5 fw-bold text-light text-center mt-2 mb-2 responsive-text mx-2" v-text="getContent('content-H13')"></p>
             </div>
         </div>
     </div>
 
     <!-- @LEE.HAIR -->
     <div class="container-fluid text-center">
-        <div class="row position-relative mt-5" >
+        <div class="row position-relative mt-4" >
             <div class="overflow-hidden col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">
-                <p class="overflow-hidden fs-3 fw-bold text-dark text-center mb-3" v-text="getContent('content-H14')"></p>
+                <p class="overflow-hidden fs-4 fw-bold text-dark text-center mb-1" v-text="getContent('content-H14')"></p>
                 <p class="overflow-hidden text-dark col-sm-6 p-2 text-center col-lg-6 col-md-6" v-text="getContent('content-H15')"></p>
             </div>
         </div>
         <div class="container">
-            <div class="row row-cols-3 row-cols-md-5 g-2">
+            <div class="row row-cols-3 row-cols-md-5 g-2 mb-4">
                 <div class="col-4 col-md">
                     <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='video/img_1.jpg')}}')" alt="Image 1" loading="lazy">
                 </div>
@@ -242,8 +247,8 @@
                 <!-- <div class="col-4 col-md">
                     <video class="img-fluid custom-img-size-1" :src="getImage('{{url_for('static', filename='video/vd_6.mp4')}}')" controls preload="auto"></video>
                 </div> -->
-                <div class="col-12 order-last order-md-2 align-items-center mt-3 d-flex flex-column justify-content-center">
-                    <p class=" fs-3 overflow-hidden mt-3 text-center" v-text="getContent('content-H16')"></p>
+                <div class="col-12 order-last order-md-2 align-items-center mt-4 d-flex flex-column justify-content-center">
+                    <p class=" fs-5 mt-2 overflow-hidden text-center" v-text="getContent('content-H16')"></p>
                 </div>
             </div>
         </div>     
@@ -251,13 +256,16 @@
 
 
     <!-- Brand  -->
-    <div class="row bg-dark mt-5" style="height: 70px; line-height: 70px;">
-        <div class=" overflow-hidden col d-flex justify-content-center align-items-center">
-            <p class="overflow-hidden fs-3 fw-bold text-white text-center m-0" v-text="getContent('content-H59')"></p>
+    <div class="container-fluid bg-dark text-center mt-4 ">
+        <div class="row position-relative" >
+            <div class="overflow-hidden">
+                <p class="overflow-hidden fs-5 fw-bold text-light text-center mt-2 mb-2 responsive-text mx-2" v-text="getContent('content-H59')"></p>
+            </div>
         </div>
     </div>
+
     <div class="container">
-        <div class="row row-cols-3 row-cols-md-5 g-2 mt-5 mb-5">
+        <div class="row row-cols-3 row-cols-md-5 g-2 mt-4 mb-4">
             <div class="col-4 col-md ">
                 <img class="img-fluid custom-img-size-1 " :src="getImage('{{ url_for('static', filename='images/brand/dorado.jpg')}}')" alt="Image 1" loading="lazy">
             </div>
@@ -285,21 +293,20 @@
             <div class="col-4 col-md">
                 <img class="img-fluid custom-img-size-1" :src="getImage('{{ url_for('static', filename='images/brand/loreal.jpg')}}')" alt="Image 9" loading="lazy">
             </div>
-            <div class="col-12 order-last order-md-2 align-items-center mt-3 d-flex flex-column justify-content-center">
-                <p class="fs-3 overflow-hidden mt-3 text-center" v-text="getContent('content-H60')"></p>
+            <div class="col-12 order-last order-md-2 align-items-center  d-flex flex-column justify-content-center">
+                <p class="fs-3 overflow-hidden text-center mt-4" v-text="getContent('content-H60')"></p>
             </div>
         </div>
     </div>   
   
     <!-- quotes -->
-    <div class="container-fluid text-center">
-        <div class="row bg-gray position-relative" >
+    <div class="container-fluid bg-gray text-center ">
+        <div class="row position-relative" >
             <div class="overflow-hidden">
-                <p class="overflow-hidden fs-5 fw-bold text-dark text-center mb-3 mt-3 mx-1 " v-text="getContent('content-H56')"></p>
+                <p class="overflow-hidden fs-5 fw-bold text-dark text-center mt-2 mb-2 responsive-text mx-2" v-text="getContent('content-H56')"></p>
             </div>
         </div>
     </div>
-    
 
     <!-- footer  -->
     {% include 'footer.html' %}
