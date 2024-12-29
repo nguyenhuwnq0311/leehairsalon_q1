@@ -94,6 +94,16 @@ const app = createApp({
                     'content-H72': '"EXQUISITE BEAUTY, TOP QUALITY."',
                     'content-H73': '"CREATE LASTING BEAUTY, SHINE EVERY DAY."',
                     'content-H74': 'THE TEAM',
+                    'content-H75': 'TET ACTIVITY ANNOUNCEMENT',
+                    'content-H76': 'Tet activity details',
+                    'content-H77': 'ACTIVITY SCHEDULE - NOTES ON APPOINTMENT/DEPOSIT - SERVICE CONSULTATION',
+                    'content-H78': '━━━━━━━━━━━',
+                    'content-H79': 'NOTES DURING TET SEASON',
+                    'content-H80': 'TIME OF SERVICE IMPLEMENTATION',
+                    'content-H81': 'WHEN DO YOU SHOULD I GET MY HAIR Dye for Tet?',
+                    'content-H82': 'New Year, New Look! Wishing you confidence and radiance!',
+                    'content-H83':'0903617376',
+                    'content-H84':'0908679635',
 
 
 
