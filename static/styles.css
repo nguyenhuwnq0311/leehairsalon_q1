@@ -50,16 +50,26 @@
 /* =================================FONT======================================== */
 
 body {
-    font-family: 'Lora', serif;
+    font-family: "Alata", serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.05em;
+    /* font-family: 'alata-regular';
     font-size: 18px;
     padding: 0 !important;
     margin: 0;
     overflow-x: hidden;
     overflow-y: hidden;
     font-weight: 500;
-    font-style: normal;
+    font-style: normal; */
     }
 
+.alata-regular {
+    font-family: "Alata", serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+    
 .font-lora {
     font-family: "Lora", serif;
     font-optical-sizing: auto;
@@ -125,6 +135,19 @@ body {
     line-height: 1.2; /* Chiều cao dòng gọn hơn */
   }
   
+.alata-regular {
+font-family: "Alata", serif;
+font-weight: 400;
+font-style: normal;
+}
+.alata-regular-header {
+    font-family: "Alata", serif;
+    font-weight: 750;
+    overflow-x: hidden;
+    letter-spacing: 0.05em; /* Thêm khoảng cách giữa các ký tự */
+}
+
+   
 /* ============================IMAGE================================== */
 .image-container {
     position: relative;
