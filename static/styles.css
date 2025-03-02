@@ -428,6 +428,15 @@ padding: 5px;
         font-size: 12px; /* Kích thước văn bản nhỏ hơn */
         line-height: 1.2; /* Chiều cao dòng gọn hơn */
       }
+
+    .a-1 {
+        display: block;
+        margin-top: 5px;
+        margin-left: 1px !important;
+    }
+    .a-1.ms-4 {
+        margin-left: 0px; /* Xóa `ms-4` khi ở chế độ mobile */
+    }
       
 }
 

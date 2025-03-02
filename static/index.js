@@ -39,8 +39,10 @@ const app = createApp({
                     'content-H21':'Hotline',
                     'content-H22':  'tel:0903617376',
                     'content-H22_1':'tel:0908679635',
-                    'content-H22_2':'📞 0903617376',
-                    'content-H22_3':'📞 0908679635',
+                    'content-H22_2':'tel:0917820691',
+                    'content-H22_3':'📞 0903617376',
+                    'content-H22_4':'📞 0908679635',
+                    'content-H22_5':'📞 0917820691',
                     'content-H23':'Society',
                     'content-H24': 'Address',
                     'content-H25':'331 Tran Hung Dao, Co Giang Ward, District 1, Ho Chi Minh City',
@@ -104,6 +106,7 @@ const app = createApp({
                     'content-H82': 'New Year, New Look! Wishing you confidence and radiance!',
                     'content-H83':'0903617376',
                     'content-H84':'0908679635',
+                    'content-H85':'0917820691',
 
 
 
@@ -144,8 +147,10 @@ const app = createApp({
                     'content-H21':'Hotline',
                     'content-H22':  'tel:0903617376',
                     'content-H22_1':'tel:0908679635',
-                    'content-H22_2':'📞 0903617376',
-                    'content-H22_3':'📞 0908679635',
+                    'content-H22_2':'tel:0917820691',
+                    'content-H22_3':'📞 0903617376',
+                    'content-H22_4':'📞 0908679635',
+                    'content-H22_5':'📞 0917820691',
                     'content-H23':'Socials',
                     'content-H24':'Địa chỉ',
                     'content-H25':'331 Trần Hưng Đạo, Phường Cô Giang, Quận 1, Thành phố Hồ Chí Minh',
@@ -208,6 +213,7 @@ const app = createApp({
                     'content-H82': 'Năm mới, diện mạo mới! Chúc bạn luôn tự tin và tỏa sáng!',
                     'content-H83':'0903617376',
                     'content-H84':'0908679635',
+                    'content-H85':'0917820691',
                 }
             }
         }
