@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 {% endblock css %}
 
+
 {% block html %}
 <div class="mt-5 mb-lg-4 mb-sm-4 mb-4">&#160;</div>
 <div class="container-fluid ">
@@ -13,7 +14,13 @@
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-10 d-flex justify-content-center">
-                <img class=" img-fluid rounded-2" :src="getImage('{{ url_for('static', filename='images/price_list/img-8.jpg')}}')" alt="Background Image">
+              <img
+                class="img-fluid rounded-2"
+                :src="lang === 'vi'
+                      ? '{{ url_for('static', filename='images/price_list/img-8.jpg') }}'
+                      : '{{ url_for('static', filename='images/price_list/price_en/img-8.jpg') }}'"
+                alt="Background Image"
+              />
             </div>
         </div>
     </div>
@@ -31,7 +38,14 @@
       <div class="row justify-content-center">
         <div class="col-md-6 d-flex justify-content-center mt-3 mb-3">
           <div class="card mx-3 my-3 w-100">
-            <img class="img-fluid card-img-top" src="{{ url_for('static', filename='images/price_list/img-1.jpg') }}" alt="Background Image">
+            <img 
+              class="img-fluid card-img-top"
+              :src="lang === 'vi'
+                    ? '{{ url_for('static', filename='images/price_list/img-1.jpg') }}'
+                    : '{{ url_for('static', filename='images/price_list/price_en/img-1.jpg') }}'"
+              alt="Background Image"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -52,7 +66,14 @@
       <div class="row justify-content-center">
         <div class="col-md-6 d-flex justify-content-center mt-3 mb-3">
           <div class="card mx-3 my-3 w-100">
-            <img class="img-fluid card-img-top" src="{{ url_for('static', filename='images/price_list/img-2.jpg') }}" alt="Background Image">
+            <img 
+              class="img-fluid card-img-top"
+              :src="lang === 'vi'
+                    ? '{{ url_for('static', filename='images/price_list/img-2.jpg') }}'
+                    : '{{ url_for('static', filename='images/price_list/price_en/img-2.jpg') }}'"
+              alt="Background Image"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -73,7 +94,14 @@
         <div class="row justify-content-center">
           <div class="col-md-6 d-flex justify-content-center mt-3 mb-3">
             <div class="card mx-3 my-3 w-100">
-              <img class="img-fluid card-img-top" src="{{ url_for('static', filename='images/price_list/img-3.jpg') }}" alt="Background Image">
+            <img 
+              class="img-fluid card-img-top"
+              :src="lang === 'vi'
+                    ? '{{ url_for('static', filename='images/price_list/img-3.jpg') }}'
+                    : '{{ url_for('static', filename='images/price_list/price_en/img-3.jpg') }}'"
+              alt="Background Image"
+              loading="lazy"
+            />
             </div>
           </div>
         </div>
@@ -94,12 +122,26 @@
         <div class="row justify-content-center">
           <div class="col-md-6 d-flex justify-content-center mt-3 mb-3">
             <div class="card mx-3 my-3 w-100">
-              <img class="img-fluid card-img-top" src="{{ url_for('static', filename='images/price_list/img-4.jpg') }}" alt="Background Image" loading="lazy">
+            <img 
+              class="img-fluid card-img-top"
+              :src="lang === 'vi'
+                    ? '{{ url_for('static', filename='images/price_list/img-4.jpg') }}'
+                    : '{{ url_for('static', filename='images/price_list/price_en/img-4.jpg') }}'"
+              alt="Background Image"
+              loading="lazy"
+            />
             </div>
           </div>
           <div class="col-md-6 d-flex justify-content-center mt-3 mb-3">
             <div class="card mx-3 my-3 w-100">
-              <img class="img-fluid card-img-top" src="{{ url_for('static', filename='images/price_list/img-5.jpg') }}" alt="Background Image" loading="lazy">
+              <img 
+                class="img-fluid card-img-top"
+                :src="lang === 'vi'
+                      ? '{{ url_for('static', filename='images/price_list/img-5.jpg') }}'
+                      : '{{ url_for('static', filename='images/price_list/img-5.jpg') }}'"
+                alt="Background Image"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
@@ -145,6 +187,7 @@
 {% endblock html %}
 
 {% block js %}
+<script>window.STATIC_BASE = "{{ url_for('static', filename='') }}";</script>
 <script src="{{ url_for('static', filename='index.js') }}"></script>
 <script src="{{ url_for('static', filename='function.js') }}"></script>
 {% endblock %}

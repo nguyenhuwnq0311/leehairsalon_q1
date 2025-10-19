@@ -107,8 +107,7 @@ const app = createApp({
                     'content-H83':'0903617376',
                     'content-H84':'0908679635',
                     'content-H85':'0917820691',
-
-
+                    'content-H86':'Open daily: 9:15 AM – 8:00 PM',
 
 
                     
@@ -214,6 +213,7 @@ const app = createApp({
                     'content-H83':'0903617376',
                     'content-H84':'0908679635',
                     'content-H85':'0917820691',
+                    'content-H86':'Hoạt động: 9:15 – 20:00 hằng ngày',
                 }
             }
         }
@@ -228,11 +228,13 @@ const app = createApp({
         switchLanguage() {
             if (this.lang === 'vi') {
                 this.lang = 'en';
+                localStorage.setItem('lang', 'es'); // 🇪🇸 dùng 'es' làm mã ngôn ngữ
             } else {
                 this.lang = 'vi';
+                localStorage.setItem('lang', 'vi');
+            }
         }
-    }
-    
+
 }});
 
 

@@ -20,3 +20,20 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', handleScroll);
     window.dispatchEvent(new Event('scroll')); // Kích hoạt lần đầu khi tải trang
 });
+
+// ==== Language-based image handling ==== //
+window.getImage = function (link) {
+  const base = window.STATIC_BASE || '/static/';
+  const lang = localStorage.getItem('lang') || 'vi';
+
+  // Nếu là tiếng ES thì chuyển ảnh sang thư mục price_en/
+  if (lang === 'es') {
+    link = link.replace('price_list/', 'price_list/price_en/');
+  }
+
+  // Nếu link đã được Flask render (bắt đầu bằng /static/...), chỉ cần trả về
+  if (link.startsWith('/static/')) return link;
+
+  return base + 'images/' + link;
+};
+
