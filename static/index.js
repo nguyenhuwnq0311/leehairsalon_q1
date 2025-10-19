@@ -60,7 +60,7 @@ const app = createApp({
                     'content-H36': 'Strengths: Cutting, Curling, Straightening, Dyeing, Balayage, Highlighting.',
                     'content-H37': '- Mr. Lee Phat -',
                     'content-H38': 'SENIOR STYLIST',
-                    'content-H39': 'Mss KHANH NHU',
+                    'content-H39': 'Mss. KHANH NHU',
                     'content-H40': 'Experience from 5 years+',
                     'content-H41': '"Personality. Intelligence. Strength and Style. Those are the things that make beauty"',
                     'content-H42': 'JUNIOR STYLIST',
