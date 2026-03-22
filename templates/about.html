@@ -119,16 +119,16 @@
     <!-- Founder -->
     <div class="container-fluid bg-light">
         <div class="container">
-            <div class="row hero-section responsive-text">
-                <div class=" col-lg-7 col-md-12 col-sm-12 col-12 text-dark  responsive-text mt-4 order-1 order-lg-1 ">
-                    <p class="fs-4 ms-lg-5 fw-bold text-lg-start text-md-start text-center" v-text="getContent('content-H30')" ></p>
-                    <p class="ms-lg-5 fs-5 text-lg-start text-md-start text-center " v-text="getContent('content-H31')"></p>
-                    <p class="fs-4 fw-bold ms-lg-5 text-lg-start text-md-start text-center " v-text="getContent('content-H32')" ></h>
+            <div class="row hero-section">
+                <div class=" col-lg-7 col-md-12 col-sm-12 col-12 text-dark mt-4 order-1 order-lg-1  ">
+                    <p class="fs-4 ms-lg-5 fw-bold text-lg-start text-md-start text-center responsive-text" v-text="getContent('content-H30')" ></p>
+                    <p class="ms-lg-5 fs-5 text-lg-start text-md-start text-center responsive-text " v-text="getContent('content-H31')"></p>
+                    <p class="fs-4 fw-bold ms-lg-5 text-lg-start text-md-start text-center responsive-text " v-text="getContent('content-H32')" ></h>
                     <p class="ms-lg-5" v-text="getContent('content-H33')"  ></p>
                     <p class="ms-lg-5" v-text="getContent('content-H34')"  ></p>
                     <p class="ms-lg-5" v-text="getContent('content-H35')"  ></p>
                     <p class="ms-lg-5" v-text="getContent('content-H36')"  ></p>
-                    <div  class="row col-md-6 order-1 order-md-1 mt-3 py-5 content-container position-relative"> 
+                    <div  class="row col-md-6 order-1 order-md-1 py-5 content-container position-relative"> 
                       <img :src="getImage('{{ url_for('static', filename='images/signature/_i17_img1.png') }}')" class="signature-img" alt="Signature" loading="lazy">
                   </div>
                 </div>

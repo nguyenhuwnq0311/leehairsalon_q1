@@ -171,7 +171,7 @@ font-style: normal;
 .image-container .main-img-1  {
     position: relative;
     top: 0;
-    width: 80%;
+    width: 70%;
     height: 80%;
     transform: translate(100%, 0%); /* Vị trí gốc */
     z-index: 0;
@@ -240,6 +240,7 @@ font-style: normal;
 
 .signature-img {
     position: absolute;
+    width: 350px;
     bottom: -50px; /* Điều chỉnh khoảng cách từ đáy ảnh */
     right: 0;
 }
@@ -317,7 +318,7 @@ padding: 5px;
     .image-container .main-img-1{
         position: relative;
         top: 0;
-        width: 100%;
+        /* width: 100%; */
         height: auto;
         transform: translate(100%, 0%); /* Vị trí gốc */
         z-index: 0;
@@ -360,8 +361,9 @@ padding: 5px;
       
 
     .signature-img {
-        bottom: -50px; /* Điều chỉnh khoảng cách từ đáy ảnh cho thiết bị di động */
-        right: 0; /* Điều chỉnh khoảng cách từ bên phải ảnh cho thiết bị di động */
+        position: absolute;
+        width: 100%;
+        height: auto;
     }
     .maps{
         min-width: 100%;
