@@ -19,7 +19,7 @@ const app = createApp({
                     'content-H1': 'OUR STUDIO',
                     'content-H2': 'LEE HAIR SALON',
                     'content-H3': 'HAIR SALON & STUDIO',
-                    'content-H4': '331 Tran Hung Dao Street, Ward Co Giang, District 1, Ho Chi Minh City',
+                    'content-H4': '331 Tran Hung Dao, Cau Ong Lanh Ward, District 1, Ho Chi Minh City',
                     'content-H5': 'OUR SERVICES',
                     'content-H6': 'CUT DESIGN',
                     'content-H7': 'With a team of hairstylists with many years of experience in the field of hair fashion, we always update the latest hair trends today, suitable for a variety of customer styles and personalities! ',
